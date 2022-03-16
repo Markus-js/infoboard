@@ -13,3 +13,28 @@ body {
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
 }
+
+.dateNtime {
+  text-align: center;
+  padding: 30px;
+
+  #currentTime {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
+
+#menu {
+  text-align: center;
+  ul {
+    margin: 10px;
+  }
+  li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    dl {
+      font-size: 15px;
+    }
+  }
+}

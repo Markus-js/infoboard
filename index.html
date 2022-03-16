@@ -12,17 +12,52 @@
     <section id="leftSide">
       <section id="headTime">
         <!-- TIME -->
-        <div id="date"></div>
+        <div class="dateNtime">
+          <p id="currentTime">
+            <span></span>
+          </p>
+          <p><span id="currentday"></span> <span id="date"></span></p>
+        </div>
         <!-- WEATHER -->
         <div id="weather"></div>
       </section>
       <!-- MENU -->
-      <div id="menu"></div>
+      <article id="menu">
+        <h2>UGENS MENU</h2>
+        <ul>
+          <li class="weekday0">
+            Mandag:
+            <dl class="desc0"></dl>
+          </li>
+          <li class="weekday1">
+            Tirsdag:
+            <dl class="desc1"></dl>
+          </li>
+          <li class="weekday2">
+            Onsdag:
+            <dl class="desc2"></dl>
+          </li>
+          <li class="weekday3">
+            Torsdag:
+            <dl class="desc3"></dl>
+          </li>
+          <li class="weekday4">
+            Fredag:
+            <dl class="desc4"></dl>
+          </li>
+        </ul>
+      </article>
       <!-- BUS -->
       <div id="bus"></div>
       <!-- BACKGROUND -->
     </section>
     <!-- KORT -->
     <div id="kort"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
