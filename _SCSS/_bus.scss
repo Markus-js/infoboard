@@ -1,8 +1,26 @@
 $mainColor: #1B183D;
-$seconColor: #24214F;
+$secondaryColor: #24214F;
 $fontColor: #AEAEC8;
 
 #bus{
-    background-color: $mainColor;
+    font-family: arial;
+    div{
+        background-color: $mainColor;
+        h2{
+            text-align: center;
+        }
+        section{
+            artical{
+                background-color: $secondaryColor;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 10px;
+                margin: 1em;
+                p{
+                    padding: 1em;
+                }
+            }
+        }
     color: $fontColor;
+    }
 }
