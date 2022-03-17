@@ -1,8 +1,12 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 #main {
   height: 100vh;
   display: grid;
-  grid-template-areas: "a c e" "b c e" "g g g" "h i i";
+  grid-template-areas: "a c e"
+ "b c e"
+ "g g g"
+ "h i i";
   grid-template-columns: 1.5fr 2fr 4.5fr;
   grid-template-rows: 1fr 2.5fr 2fr 2fr;
 }
@@ -44,6 +48,47 @@
 
 * {
   font-family: 'Poppins';
+
+#bus {
+  font-family: arial;
+  font-size: 4.2vw;
+}
+
+#bus div {
+  background-color: #1B183D;
+  color: #AEAEC8;
+}
+
+#bus div h2 {
+  text-align: center;
+}
+
+#bus div section {
+  padding: 1em 0;
+}
+
+#bus div section artical {
+  background-color: #24214F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+#bus div section artical p {
+  padding: 1em;
+}
+
+#bus div section artical p:last-child {
+  min-width: 5em;
+  text-align: right;
+}
+
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -178,3 +223,10 @@ img {
   bottom: 37.5px;
   left: 102.5px;
 }
+=======
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+}
+

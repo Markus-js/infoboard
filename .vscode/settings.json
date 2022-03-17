@@ -1,0 +1,17 @@
+{     
+    "liveSassCompile.settings.generateMap": false,     
+    "liveSassCompile.settings.formats": [{             
+        "format": "expanded",             
+        "extensionName": ".css",             
+        "savePath": "./assets/css/"}],
+        "githubIssues.queries": [{ 
+            "label": "My Issues",             
+            "query": "default"},{             
+                "label": "Created Issues",             
+                "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"}],
+                    "git.autofetch": true,
+                    "git.enableSmartCommit": true,     
+                    "[html]": {         
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"},     
+                    "bracketPairColorizer.depreciation-notice": false,     
+                    "githubPullRequests.fileListLayout": "flat" }

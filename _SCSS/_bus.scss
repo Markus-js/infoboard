@@ -1,0 +1,32 @@
+$mainColor: #1B183D;
+$secondaryColor: #24214F;
+$fontColor: #AEAEC8;
+
+#bus{
+    font-family: arial;
+    font-size: 4.2vw;
+    div{
+        background-color: $mainColor;
+        h2{
+            text-align: center;
+        }
+        section{
+            padding: 1em 0;
+            artical{
+                background-color: $secondaryColor;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 10px;
+                margin: 1em;
+                p{
+                    padding: 1em;
+                    &:last-child{
+                        min-width: 5em;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    color: $fontColor;
+    }
+}
