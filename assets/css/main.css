@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+#bus div section {
+  padding: 1em 0;
+}
+
 #bus div section artical {
   background-color: #24214F;
   display: -webkit-box;
