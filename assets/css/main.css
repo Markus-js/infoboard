@@ -3,7 +3,7 @@
   display: grid;
   grid-template-areas: "a c e" "b c e" "g g g" "h i i";
   grid-template-columns: 1.5fr 2fr 4.5fr;
-  grid-template-rows: 1fr 2.5fr 2fr 2fr;
+  grid-template-rows: 2fr 5fr 4fr 4fr;
 }
 
 .dateNtime {
