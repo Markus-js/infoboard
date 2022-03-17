@@ -70,7 +70,11 @@ body {
   justify-content: space-evenly;
 }
 
-#kort img {
+#kort #dot-section {
+  width: 45%;
+}
+
+#kort #dot-section img {
   width: 100%;
 }
 
@@ -97,8 +101,8 @@ img {
 
 #dot-section {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
 }
 
 #dot-section .dot {
@@ -111,54 +115,54 @@ img {
 
 #dot-section #P024 {
   position: absolute;
-  right: 90px;
-  top: 150px;
+  right: 45px;
+  top: 75px;
 }
 
 #dot-section #P025 {
   position: absolute;
-  right: 345px;
-  top: 150px;
+  right: 172.5px;
+  top: 75px;
 }
 
 #dot-section #P026 {
   position: absolute;
-  right: 580px;
-  top: 150px;
+  right: 290px;
+  top: 75px;
 }
 
 #dot-section #P027-3 {
   position: absolute;
-  top: 150px;
-  left: 630px;
+  top: 75px;
+  left: 315px;
 }
 
 #dot-section #P027-4 {
   position: absolute;
-  top: 150px;
-  left: 390px;
+  top: 75px;
+  left: 195px;
 }
 
 #dot-section #SUs151 {
   position: absolute;
-  bottom: 100px;
-  right: 620px;
+  bottom: 50px;
+  right: 310px;
 }
 
 #dot-section #N112b {
   position: absolute;
-  bottom: 75px;
-  left: 570px;
+  bottom: 37.5px;
+  left: 285px;
 }
 
 #dot-section #E102S {
   position: absolute;
-  bottom: 75px;
-  left: 455px;
+  bottom: 37.5px;
+  left: 227.5px;
 }
 
 #dot-section #N120 {
   position: absolute;
-  bottom: 75px;
-  left: 205px;
+  bottom: 37.5px;
+  left: 102.5px;
 }
