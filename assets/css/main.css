@@ -1,5 +1,6 @@
 #bus {
   font-family: arial;
+  font-size: 4.2vw;
 }
 
 #bus div {
@@ -29,6 +30,11 @@
 
 #bus div section artical p {
   padding: 1em;
+}
+
+#bus div section artical p:last-child {
+  min-width: 5em;
+  text-align: right;
 }
 
 * {

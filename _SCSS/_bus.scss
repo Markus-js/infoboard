@@ -4,6 +4,7 @@ $fontColor: #AEAEC8;
 
 #bus{
     font-family: arial;
+    font-size: 4.2vw;
     div{
         background-color: $mainColor;
         h2{
@@ -19,6 +20,10 @@ $fontColor: #AEAEC8;
                 margin: 1em;
                 p{
                     padding: 1em;
+                    &:last-child{
+                        min-width: 5em;
+                        text-align: right;
+                    }
                 }
             }
         }
