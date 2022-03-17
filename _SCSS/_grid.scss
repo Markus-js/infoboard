@@ -1,0 +1,38 @@
+#main {
+    display: grid;
+    grid-template-areas: 
+    "a c e"
+    "b c e"
+    "g g g"
+    "h i i";
+    grid-template-columns: 2fr 3fr 4.5fr;
+    grid-template-rows: 1fr 2.5fr 2fr 2fr;
+}
+.dateNtime {
+    grid-area: a;
+    background-color: rgb(32, 32, 32);
+}
+#menu {
+    grid-area: b;
+    background-color: rgb(61, 61, 61);
+}
+#bus {
+    grid-area: c;
+    background-color: rgb(88, 88, 88);
+}
+#kort {
+    grid-area: e;
+    background-color: rgb(124, 124, 124);
+}
+#chart {
+    grid-area: g;
+    background-color: rgb(82, 82, 82);
+}
+#weather {
+    grid-area: h;
+    background-color: rgb(139, 139, 139);
+}
+#forecast {
+    grid-area: i;
+    background-color: rgb(36, 36, 36);
+}

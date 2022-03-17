@@ -9,18 +9,16 @@
     <script type="module" defer src="assets/js/main.js"></script>
   </head>
   <body>
-    <section id="leftSide">
-      <section id="headTime">
-        <!-- TIME -->
-        <div class="dateNtime">
-          <p id="currentTime">
-            <span></span>
-          </p>
-          <p><span id="currentday"></span> <span id="date"></span></p>
-        </div>
-        <!-- WEATHER -->
-        <div id="weather"></div>
-      </section>
+    <main id="main">
+      <!-- TIME -->
+      <div class="dateNtime">
+        <p id="currentTime">
+          <span></span>
+        </p>
+        <p><span id="currentday"></span> <span id="date"></span></p>
+      </div>
+      <!-- WEATHER -->
+      <div id="weather"></div>
       <!-- MENU -->
       <article id="menu">
         <h2>UGENS MENU</h2>
@@ -50,18 +48,38 @@
       <!-- BUS -->
       <div id="bus"></div>
       <!-- BACKGROUND -->
-    </section>
-    <!-- KORT -->
-    <div id="kort">
-      <img src="assets/infoboard-floor-map.svg" alt="skole-kort">
-      <section id="dot-section">
-      </section>
-    </div>
-    <script
+      <!-- KORT -->
+      <div id="kort">
+        <ul>
+          <li>Medie Grafiker GF</li>
+          <li>Webudvikler GF</li>
+          <li>Intro Kursus 1</li>
+          <li>Mediegrafiker HF1</li>
+          <li>Grafisk Teknik H1</li>
+          <li>Grafisk Teknik H2</li>
+          <li>Intro Kursus 5</li>
+        </ul>
+        <ul>
+          <li>Brobyg 1</li>
+          <li>Grafisk Teknik G1</li>
+          <li>Webudvikler HF1</li>
+          <li>Grafisk Teknik H2</li>
+          <li>Mediegrafiker HF2</li>
+          <li>Brobyg 2</li>
+        </ul>
+        
+        <section id="dot-section">
+          <img src="assets/infoboard-floor-map.svg" alt="skole-kort">
+        <!-- <svg id="floor-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 836.47 389.1"><defs><style>.cls-1{fill:none;stroke:#504f78;stroke-miterlimit:10;stroke-width:3px;}.cls-2{fill:#2a2656;}.cls-3{font-size:29.96px;fill:#bcbcf7;font-family:MyriadPro-Regular, Myriad Pro;}</style></defs><g id="main-group"><g id="map-lines"><polyline class="cls-1" points="30.96 181.39 30.96 1.5 0 1.5"/><line class="cls-1" x1="30.96" y1="387.6" x2="30.96" y2="208.83"/><polyline class="cls-1" points="834.97 208.83 834.97 387.6 0 387.6"/><polyline class="cls-1" points="118.67 1.5 834.97 1.5 834.97 170.9 834.97 181.39"/><line class="cls-1" x1="30.96" y1="1.5" x2="104.91" y2="1.5"/><line class="cls-1" x1="723.88" y1="170.9" x2="834.97" y2="170.9"/><polyline class="cls-1" points="699.97 1.5 699.97 170.9 710.41 170.9"/><line class="cls-1" x1="590.98" y1="170.9" x2="699.97" y2="170.9"/><polyline class="cls-1" points="565.82 1.5 565.82 170.9 576.71 170.9"/><polyline class="cls-1" points="808.77 220.78 765.32 220.78 765.32 387.6"/><line class="cls-1" x1="834.97" y1="220.78" x2="822.6" y2="220.78"/><line class="cls-1" x1="740.05" y1="220.78" x2="765.32" y2="220.78"/><polyline class="cls-1" points="632.03 387.6 632.03 336 671.59 336 671.59 220.78 726.22 220.78"/><line class="cls-1" x1="527.12" y1="378.98" x2="527.12" y2="387.6"/><polyline class="cls-1" points="632.03 336 527.12 336 527.12 365.15"/><polyline class="cls-1" points="671.59 248.29 527.12 248.29 527.12 336"/><polyline class="cls-1" points="479.4 220.78 527.12 220.78 527.12 248.29"/><polyline class="cls-1" points="431.67 387.6 431.67 220.78 451.34 220.78"/><line class="cls-1" x1="554.53" y1="170.9" x2="565.82" y2="170.9"/><polyline class="cls-1" points="498.75 181.6 498.75 170.9 540.04 170.9"/><line class="cls-1" x1="498.75" y1="220.78" x2="498.75" y2="208.83"/><polyline class="cls-1" points="431.67 1.5 431.67 170.9 498.75 170.9"/><polyline class="cls-1" points="320.05 304.05 298.39 304.19 298.39 387.6"/><line class="cls-1" x1="431.67" y1="303.33" x2="343.1" y2="304.05"/><line class="cls-1" x1="279.5" y1="304.07" x2="298.39" y2="304.19"/><line class="cls-1" x1="278.47" y1="304.06" x2="279.5" y2="304.07"/><line class="cls-1" x1="259.61" y1="303.94" x2="260.12" y2="303.94"/><polyline class="cls-1" points="165.1 387.6 165.1 303.33 259.61 303.94"/><line class="cls-1" x1="142.65" y1="303.33" x2="165.1" y2="303.33"/><polyline class="cls-1" points="98.03 208.83 98.03 303.33 120.34 303.33"/><line class="cls-1" x1="98.03" y1="132.65" x2="98.03" y2="181.39"/><line class="cls-1" x1="98.03" y1="84.34" x2="98.03" y2="118.16"/><line class="cls-1" x1="98.03" y1="54.49" x2="98.03" y2="70.73"/><line class="cls-1" x1="98.03" y1="1.5" x2="98.03" y2="41.53"/><polyline class="cls-1" points="183.93 170.9 165.1 170.9 165.1 1.5"/><line class="cls-1" x1="317.56" y1="170.9" x2="198.42" y2="170.9"/><polyline class="cls-1" points="344.72 170.9 431.67 170.9 331.93 170.9"/><polyline class="cls-1" points="298.39 1.5 298.39 170.9 316.98 170.9"/><line class="cls-1" x1="53.52" y1="220.78" x2="98.03" y2="220.78"/><polyline class="cls-1" points="0 220.78 30.96 220.78 39.9 220.78"/><polyline class="cls-1" points="37.71 170.9 30.96 170.9 0 170.9"/><line class="cls-1" x1="98.03" y1="170.9" x2="51.1" y2="170.9"/><line class="cls-1" x1="37.71" y1="111.57" x2="30.96" y2="111.57"/><line class="cls-1" x1="98.03" y1="111.57" x2="51.1" y2="111.57"/><line class="cls-1" x1="98.03" y1="61.69" x2="30.96" y2="61.69"/><line class="cls-1" x1="632.03" y1="241.41" x2="632.03" y2="248.29"/><polyline class="cls-1" points="671.59 220.78 632.03 220.78 632.03 228.52"/><line class="cls-1" x1="30.96" y1="303.33" y2="303.33"/></g><rect id="P026c-box" class="cls-2" x="189.73" y="10.06" width="88.87" height="34.91" rx="16.5"/><text id="P026c-text" class="cls-3" transform="translate(195.44 37.5)">P026c</text><rect id="P026b-box" class="cls-2" x="320.33" y="10.02" width="88.87" height="34.91" rx="16.5"/><text id="P026b-text" class="cls-3" transform="translate(326.04 37.45)">P026b</text><rect id="P026-box" class="cls-2" x="454.13" y="8.02" width="88.87" height="34.91" rx="16.5"/><text id="P026-text" class="cls-3" transform="translate(466.84 37.45)">P026</text><rect id="P025-box" class="cls-2" x="587.58" y="7.85" width="88.87" height="34.91" rx="16.5"/><text id="P025-text" class="cls-3" transform="translate(600.28 36.28)">P025</text><rect id="P024-box" class="cls-2" x="726.38" y="7.85" width="88.87" height="34.91" rx="16.5"/><text id="P024-text" class="cls-3" transform="translate(739.08 36.28)">P024</text><rect id="P018-box" class="cls-2" x="440.37" y="227.21" width="75.89" height="34.91" rx="16.5"/><text id="P018-text" class="cls-3" transform="translate(447.99 255.65)">P018</text><rect id="P017-box" class="cls-2" x="349.44" y="308.54" width="75.89" height="34.91" rx="16.5"/><text id="P017-text" class="cls-3" transform="translate(357.07 336.98)">P017</text><rect id="P016-box" class="cls-2" x="175.65" y="308.76" width="75.89" height="34.91" rx="16.5"/><text id="P016-text" class="cls-3" transform="translate(183.27 337.19)">P016</text><rect id="P015-box" class="cls-2" x="36.17" y="308.33" width="75.89" height="34.91" rx="16.5"/><text id="P015-text" class="cls-3" transform="translate(43.79 336.76)">P015</text></g></svg> -->
+        </section>
+      </div>
+    </main>
+      <script
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
       integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
-  </body>
-</html>
+      ></script>
+    </body>
+    </html>
+    

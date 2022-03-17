@@ -1,3 +1,5 @@
+@import './grid';
+
 // MAIN
 * {
   //global og universal selector
@@ -10,7 +12,7 @@
 body {
   // overflow-y: hidden;
   /* Hide vertical scrollbar */
-  overflow-x: hidden;
+  // overflow-x: hidden;
   /* Hide horizontal scrollbar */
 }
 
@@ -22,6 +24,18 @@ body {
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 30px;
+  }
+}
+
+#kort {
+  ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  img {
+    width: 100%;
   }
 }
 
@@ -39,7 +53,6 @@ body {
   }
 }
 img {
-  position: absolute;
   display: block;
 }
 

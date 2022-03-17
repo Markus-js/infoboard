@@ -1,3 +1,45 @@
+#main {
+  display: grid;
+  grid-template-areas: "a c e" "b c e" "g g g" "h i i";
+  grid-template-columns: 2fr 3fr 4.5fr;
+  grid-template-rows: 1fr 2.5fr 2fr 2fr;
+}
+
+.dateNtime {
+  grid-area: a;
+  background-color: #202020;
+}
+
+#menu {
+  grid-area: b;
+  background-color: #3d3d3d;
+}
+
+#bus {
+  grid-area: c;
+  background-color: #585858;
+}
+
+#kort {
+  grid-area: e;
+  background-color: #7c7c7c;
+}
+
+#chart {
+  grid-area: g;
+  background-color: #525252;
+}
+
+#weather {
+  grid-area: h;
+  background-color: #8b8b8b;
+}
+
+#forecast {
+  grid-area: i;
+  background-color: #242424;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +49,6 @@
 
 body {
   /* Hide vertical scrollbar */
-  overflow-x: hidden;
   /* Hide horizontal scrollbar */
 }
 
@@ -20,6 +61,17 @@ body {
   margin-bottom: 15px;
   font-weight: bold;
   font-size: 30px;
+}
+
+#kort ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#kort img {
+  width: 100%;
 }
 
 #menu {
@@ -40,7 +92,6 @@ body {
 }
 
 img {
-  position: absolute;
   display: block;
 }
 
