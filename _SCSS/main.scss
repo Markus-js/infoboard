@@ -9,6 +9,7 @@
 * {
   //global og universal selector
   font-family: 'Poppins';
+  color: #AEAEC8;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -16,6 +17,7 @@
 }
 
 body {
+  background-color: #1B183D;
   // overflow-y: hidden;
   /* Hide vertical scrollbar */
   // overflow-x: hidden;
@@ -25,14 +27,28 @@ body {
 .dateNtime {
   text-align: center;
   padding: 30px;
-
+font-size: 1vw;
   #currentTime {
     margin-bottom: 15px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.3vw;
   }
 }
+#classcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  div {
+    display: flex;
+    margin: 0 25px;
+    align-items: center;
+    div {
+      height: 10px;
+      width: 10px;
 
+    }
+  }
+}
 #kort {
   font-size: 1vw;
   ul {
@@ -54,15 +70,16 @@ body {
 }
 
 #menu {
+  font-size: 0.7vw;
   text-align: center;
   ul {
     margin: 10px;
   }
   li {
-    font-size: 20px;
+    font-size: 1vw;
     margin-bottom: 10px;
     dl {
-      font-size: 15px;
+      font-size: 1vw;
     }
   }
 }
@@ -74,66 +91,114 @@ img {
   position: absolute;
   height: 50%;
   width: 50%;
+
 }
 
-#dot-section .dot {
+.dot {
   padding: 1rem;
   background-color: black;
   margin: 1rem;
-  border-radius: 100px;
-  width: 0.1%;
+  border-radius: 200px;
+  width: 50px;
+  height: 50px;
 }
 
 #dot-section #P024 {
   position: absolute;
-  right: 45px;
-  top: 75px;
+  right: 1%;
+  top: 20%;
 }
 
 #dot-section #P025 {
   position: absolute;
-  right: 172.5px;
-  top: 75px;
+  right: 0;
+  top: 0px;
 }
 
 #dot-section #P026 {
   position: absolute;
-  right: 290px;
-  top: 75px;
+  right: 33%;
+  top: 20%;
 }
 
 #dot-section #P027-3 {
   position: absolute;
-  top: 75px;
-  left: 315px;
+  top: 20%;
+  left: 47%;
 }
 
 #dot-section #P027-4 {
   position: absolute;
-  top: 75px;
-  left: 195px;
+  top: 20%;
+  left: 33%;
 }
 
 #dot-section #SUs151 {
   position: absolute;
-  bottom: 50px;
-  right: 310px;
+  bottom: 20%;
+  right: 35%;
 }
 
 #dot-section #N112b {
   position: absolute;
-  bottom: 37.5px;
-  left: 285px;
+  bottom: 11%;
+  left: 47%;
 }
 
 #dot-section #E102S {
   position: absolute;
-  bottom: 37.5px;
-  left: 227.5px;
+  bottom: 11%;
+  left: 35%;
 }
 
 #dot-section #N120 {
   position: absolute;
-  bottom: 37.5px;
-  left: 102.5px;
+  bottom: 11%;
+  left: 20%;
+}
+
+#lightblue {
+  background-color: lightblue;
+}
+#pink {
+  background-color: #fa4bbc;
+}
+
+#black {
+  background-color: black;
+}
+
+#orange {
+  background-color: orange;
+}
+#turquoise {
+  background-color: turquoise;
+}
+#yellow {
+  background-color: yellow;
+}
+#green {
+  background-color: green;
+}
+
+#brown {
+  background-color: brown;
+}
+
+#red {
+  background-color: red;
+}
+#peru {
+  background-color: peru;
+}
+
+#purple {
+  background-color: purple;
+}
+#yellowgreen {
+  background-color: yellowgreen;
+}
+
+#blue {
+  background-color: blue;
 }

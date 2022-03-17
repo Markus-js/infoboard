@@ -4,15 +4,18 @@ $fontColor: #AEAEC8;
 
 #bus{
     font-family: arial;
-    font-size: 4.2vw;
+    font-size: 1vw;
     div{
         background-color: $mainColor;
         h2{
+            font-size: 1.3vw;
             text-align: center;
+            margin-top: 25px;
+            margin-bottom: 125px;
         }
         section{
             padding: 1em 0;
-            artical{
+            article{
                 background-color: $secondaryColor;
                 display: flex;
                 justify-content: space-between;

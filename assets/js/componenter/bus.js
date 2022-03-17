@@ -58,7 +58,7 @@ function build(data) {
     
         // post
     
-            let busTap = document.createElement('artical');
+            let busTap = document.createElement('article');
             busTap.innerHTML += `
                 <p>${item.line}</p>
                 <p>${item.direction}</p>
