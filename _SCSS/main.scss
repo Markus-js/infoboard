@@ -36,6 +36,9 @@ body {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
+    li {
+      list-style-type: disc;
+    }
   }
   #dot-section {
     width: 50%;
