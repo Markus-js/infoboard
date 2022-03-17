@@ -8,7 +8,7 @@
 }
 
 body {
-  overflow-y: hidden;
+  // overflow-y: hidden;
   /* Hide vertical scrollbar */
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
@@ -37,4 +37,76 @@ body {
       font-size: 15px;
     }
   }
+}
+img {
+  position: absolute;
+  display: block;
+}
+
+#dot-section {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#dot-section .dot {
+  padding: 1rem;
+  background-color: black;
+  margin: 1rem;
+  border-radius: 100px;
+  width: 0.1%;
+}
+
+#dot-section #P024 {
+  position: absolute;
+  right: 90px;
+  top: 150px;
+}
+
+#dot-section #P025 {
+  position: absolute;
+  right: 345px;
+  top: 150px;
+}
+
+#dot-section #P026 {
+  position: absolute;
+  right: 580px;
+  top: 150px;
+}
+
+#dot-section #P027-3 {
+  position: absolute;
+  top: 150px;
+  left: 630px;
+}
+
+#dot-section #P027-4 {
+  position: absolute;
+  top: 150px;
+  left: 390px;
+}
+
+#dot-section #SUs151 {
+  position: absolute;
+  bottom: 100px;
+  right: 620px;
+}
+
+#dot-section #N112b {
+  position: absolute;
+  bottom: 75px;
+  left: 570px;
+}
+
+#dot-section #E102S {
+  position: absolute;
+  bottom: 75px;
+  left: 455px;
+}
+
+#dot-section #N120 {
+  position: absolute;
+  bottom: 75px;
+  left: 205px;
 }

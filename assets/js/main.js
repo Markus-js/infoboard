@@ -8,3 +8,6 @@ dateNTime();
 
 import { weekly } from "./componenter/weekly.js";
 weekly();
+
+import { showdata } from "./componenter/Fetch.js";
+setInterval(showdata(), 1800000)
