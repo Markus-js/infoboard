@@ -111,12 +111,7 @@ data.forEach(element => {
           createElementDiv(element.Room, element.Color)
         }
         break;
-      case "gmg010122":
-        if (element.Room !== ""){
-          element.Color = "yellowgreen"
-          createElementDiv(element.Room, element.Color)
-        }
-        break;
+     
       case "iiw030422": 
       if (element.Room !== ""){
         element.Color = "blue"
