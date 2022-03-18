@@ -10,6 +10,6 @@ setInterval(showdata(), 1800000)
 
 //bus
 import { bus } from "./componenter/bus.js";
-setInterval(bus(), 1800000)
+bus()
 
 
