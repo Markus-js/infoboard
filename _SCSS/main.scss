@@ -205,10 +205,16 @@ img {
 
 #Weather-grid{
   display: grid;
-grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 padding: 10px;
 #Day0{
-  transform: scale(1.5);
+}
+
+#MainWeather{
+  margin-left: 2vw;
+  width: 5.5vw;
+  height: 6vw;
+  transform: scale(1.6);
 }
 div{
   margin: 1vw;

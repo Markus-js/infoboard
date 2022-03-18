@@ -9,7 +9,6 @@ x = 3
 let TempRange =[]  
 let TempRangeMax
 let TempRangeMin
-let date1 = new Date();
      
 function getGeoLocation() {
     // Navigator is your browser. 
@@ -32,7 +31,8 @@ async function getWeatherData(latitude, longitude) {
   const unit = "metric";
   const API_KEY = "dcf74a579d1a7bdab77b86e3da8f7ac3";
   const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude={part}&units=${unit}&appid=${API_KEY}`;
-  
+  let date1 = new Date();
+
   try {
     const response = await fetch(apiUrl);
     const Weather = await response.json();
@@ -68,7 +68,7 @@ async function getWeatherData(latitude, longitude) {
     
 const ctx = document.getElementById("TempChart").getContext("2d")
 let Gradient = ctx.createLinearGradient(0,0,0, 600)
-Chart.defaults.font.size = 20;
+Chart.defaults.font.size = 40;
 Chart.defaults.color = "#ffffff";
 
 
@@ -135,6 +135,9 @@ const chart = new Chart(ctx, {
     },
       scales: {
         x: {
+          ticks:{
+            padding: 0
+          },
           grid: {
             display:false
           }
@@ -155,8 +158,9 @@ const chart = new Chart(ctx, {
 });
 
 for (let i = 0; i < 6; i++) {
-document.getElementById("Day"+i).setAttribute("href", "#"+Weather.daily[i].weather[0].main);
-console.log(Weather.daily[i].weather[0].main)
+document.getElementById("Day"+i).setAttribute("href", "#"+Weather.hourly[q].weather[0].main);
+console.log(Weather.hourly[q].weather[0].main)
+q = q + 2
 }
 
 
