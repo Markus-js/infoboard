@@ -11,7 +11,7 @@ const time = new Date();
   
   const monthFormat = month < 10 ? month = `0${month + 1}` : month + 1;
   const hourFormat = hour < 10 ? hour = `0${hour}` : hour;
-  let dateOfTime = `${year}-${monthFormat}-${date}`;
+  let dateOfTime = `${year}-${monthFormat}-${date}T${hourFormat}`;
   console.log(dateOfTime)
 
  
@@ -40,7 +40,7 @@ export function showdata() {
 data.forEach(element => {
   let hold = element.Team
   
-  if (element.StartDate.substring(0,10)===dateOfTime) {
+  if (element.StartDate.substring(0,13)===dateOfTime) {
     console.log(element)
     switch (hold) {
       case "gmg010122":
