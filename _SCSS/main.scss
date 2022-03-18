@@ -221,3 +221,11 @@ div{
   width: 400px;
   height: 700px;
 }
+
+#weather-color-corner {
+  background-color: #24214F;
+  position: absolute;
+  width: 1070px;
+  height: 600px;
+  z-index: -9999;
+}

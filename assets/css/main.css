@@ -19,11 +19,6 @@
 }
 
 #menu {
-  position: absolute;
-  top: 346px;
-  width: 1070px;
-  height: 100vh;
-  z-index: -9997;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b;
@@ -355,4 +350,12 @@ img {
 #TempChart {
   width: 400px;
   height: 700px;
+}
+
+#weather-color-corner {
+  background-color: #24214F;
+  position: absolute;
+  width: 1070px;
+  height: 600px;
+  z-index: -9999;
 }
