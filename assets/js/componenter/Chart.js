@@ -22,7 +22,7 @@ function getGeoLocation() {
   });
 }
 
-getGeoLocation()
+setInterval(getGeoLocation(), 1800000)
 
 // FETCH
 let errorCountAmountOfTryies = 0;

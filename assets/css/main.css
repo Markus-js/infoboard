@@ -3,7 +3,7 @@
   height: 100vh;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "a c e" "b c e" "g g g" "h h h";
+      grid-template-areas: "a c e" "b c e" "g g g" "h h h";
   -ms-grid-columns: 1.5fr 2fr 4.5fr;
       grid-template-columns: 1.5fr 2fr 4.5fr;
   -ms-grid-rows: 1fr 3.7fr 2fr 1fr;
@@ -11,6 +11,7 @@
 }
 
 .dateNtime {
+  z-index: -9997;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
@@ -18,6 +19,11 @@
 }
 
 #menu {
+  position: absolute;
+  top: 346px;
+  width: 1070px;
+  height: 100vh;
+  z-index: -9997;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b;
@@ -45,7 +51,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: g;
-  background-color: #525252;
+  background-color: #1B183D;
 }
 
 #weather {
@@ -53,7 +59,6 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: h;
-  background-color: #8b8b8b;
 }
 
 #forecast {
@@ -67,7 +72,6 @@
 }
 
 #bus div {
-  background-color: #1B183D;
   color: #AEAEC8;
 }
 
@@ -114,7 +118,9 @@
 
 body {
   background-color: #1B183D;
+  overflow-y: hidden;
   /* Hide vertical scrollbar */
+  overflow-x: hidden;
   /* Hide horizontal scrollbar */
 }
 
