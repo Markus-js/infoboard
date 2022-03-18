@@ -17,3 +17,4 @@ setInterval(showdata(), 1800000)
 import { bus } from "./componenter/bus.js";
 bus();
 
+

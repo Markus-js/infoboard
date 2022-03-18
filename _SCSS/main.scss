@@ -202,3 +202,22 @@ img {
 #blue {
   background-color: blue;
 }
+
+#Weather-grid{
+  display: grid;
+grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+padding: 10px;
+#Day0{
+  transform: scale(1.5);
+}
+div{
+  margin: 1vw;
+  height: 10vh;
+  text-align: center;
+}
+}
+
+#TempChart{
+  width: 400px;
+  height: 700px;
+}
