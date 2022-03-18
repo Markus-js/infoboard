@@ -355,7 +355,7 @@ img {
 #weather-color-corner {
   background-color: #24214F;
   position: absolute;
-  width: 740px;
+  width: 735px;
   height: 600px;
   z-index: -9999;
 }
