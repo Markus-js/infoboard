@@ -3,7 +3,7 @@
   height: 100vh;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "a c e" "b c e" "g g g" "h h h";
+      grid-template-areas: "a c e" "b c e" "g g g" "h h h";
   -ms-grid-columns: 1.5fr 2fr 4.5fr;
       grid-template-columns: 1.5fr 2fr 4.5fr;
   -ms-grid-rows: 1fr 3.7fr 2fr 1fr;
@@ -331,14 +331,17 @@ img {
 #Weather-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 10px;
 }
 
-#Weather-grid #Day0 {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+#Weather-grid #MainWeather {
+  margin-left: 2vw;
+  width: 5.5vw;
+  height: 6vw;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
 }
 
 #Weather-grid div {
