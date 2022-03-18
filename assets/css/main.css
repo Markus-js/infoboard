@@ -219,8 +219,8 @@ img {
   background-color: black;
   margin: 1rem;
   border-radius: 200px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 #dot-section #P024 {
@@ -261,19 +261,19 @@ img {
 
 #dot-section #N112b {
   position: absolute;
-  bottom: 13%;
+  bottom: 17%;
   left: 47%;
 }
 
 #dot-section #E102S {
   position: absolute;
-  bottom: 13%;
+  bottom: 17%;
   left: 35%;
 }
 
 #dot-section #N120 {
   position: absolute;
-  bottom: 13%;
+  bottom: 17%;
   left: 20%;
 }
 
