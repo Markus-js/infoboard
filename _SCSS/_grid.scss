@@ -1,3 +1,4 @@
+@import "color-variables";
 #main {
     height: 100vh;
     display: grid;
@@ -12,23 +13,23 @@
 .dateNtime {
     z-index: -9997;
     grid-area: a;
-    background-color: #24214F;
+    background-color: $second-background;
 }
 #menu {
     grid-area: b;
-    background-color: #24214F;
+    background-color: $second-background;
 }
 #bus {
     grid-area: c;
-    background-color: #1B183D;
+    background-color: $background;
 }
 #kort {
     grid-area: e;
-    background-color: #1B183D;
+    background-color: $background;
 }
 #chart {
     grid-area: g;
-    background-color: #1B183D;
+    background-color: $background;
 }
 #weather {
     grid-area: h;

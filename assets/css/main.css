@@ -3,10 +3,7 @@
   height: 100vh;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "a c e"
- "b c e"
- "g g g"
- "h h h";
+      grid-template-areas: "a c e" "b c e" "g g g" "h h h";
   -ms-grid-columns: 1.5fr 2fr 4.5fr;
       grid-template-columns: 1.5fr 2fr 4.5fr;
   -ms-grid-rows: 1fr 3.7fr 2fr 1fr;
@@ -18,14 +15,14 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
-  background-color: #24214F;
+  background-color: #201b49;
 }
 
 #menu {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b;
-  background-color: #24214F;
+  background-color: #201b49;
 }
 
 #bus {
@@ -33,7 +30,7 @@
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: c;
-  background-color: #1B183D;
+  background-color: #1b1842;
 }
 
 #kort {
@@ -41,7 +38,7 @@
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: e;
-  background-color: #1B183D;
+  background-color: #1b1842;
 }
 
 #chart {
@@ -49,7 +46,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: g;
-  background-color: #1B183D;
+  background-color: #1b1842;
 }
 
 #weather {
@@ -71,7 +68,7 @@
 }
 
 #bus div {
-  color: #AEAEC8;
+  color: #B8B8D1;
 }
 
 #bus div h2 {
@@ -79,6 +76,7 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 125px;
+  color: #fff;
 }
 
 #bus div section {
@@ -86,7 +84,7 @@
 }
 
 #bus div section article {
-  background-color: #24214F;
+  background-color: #201b49;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,9 +105,8 @@
 }
 
 * {
-
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-  color: #AEAEC8;
+  color: #B8B8D1;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -117,7 +114,7 @@
 }
 
 body {
-  background-color: #1B183D;
+  background-color: #1b1842;
   overflow-y: hidden;
   /* Hide vertical scrollbar */
   overflow-x: hidden;
@@ -206,6 +203,10 @@ body {
 
 #menu li dl {
   font-size: 1vw;
+}
+
+#menu h2 {
+  color: #fff;
 }
 
 img {
@@ -366,7 +367,7 @@ img {
 }
 
 #weather-color-corner {
-  background-color: #24214F;
+  background-color: #201b49;
   position: absolute;
   width: 730px;
   height: 600px;

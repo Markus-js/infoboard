@@ -1,6 +1,6 @@
-$mainColor: #1B183D;
-$secondaryColor: #24214F;
-$fontColor: #AEAEC8;
+$mainColor: #1b1842;
+$secondaryColor: #201b49;
+$fontColor: #B8B8D1;
 
 #bus{
     // z-index: -9999;
@@ -14,6 +14,7 @@ $fontColor: #AEAEC8;
             text-align: center;
             margin-top: 25px;
             margin-bottom: 125px;
+            color: #fff;
         }
         section{
             padding: 1em 0;

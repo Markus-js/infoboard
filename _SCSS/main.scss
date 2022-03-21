@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap');
 
 @import "_bus.scss";
-
+@import "color-variables";
 
 // MAIN
 * {
   //global og universal selector
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-  color: #AEAEC8;
+  color: $text;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: #1B183D;
+  background-color: $background;
   overflow-y: hidden;
   /* Hide vertical scrollbar */
   overflow-x: hidden;
@@ -81,6 +81,9 @@ font-size: 1vw;
     dl {
       font-size: 1vw;
     }
+  }
+  h2 {
+    color: $header-text;
   }
 }
 img {
@@ -234,7 +237,7 @@ svg{
 }
 
 #weather-color-corner {
-  background-color: #24214F;
+  background-color: $second-background;
   position: absolute;
   width: 730px;
   height: 600px;
