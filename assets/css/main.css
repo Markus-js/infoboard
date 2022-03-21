@@ -79,6 +79,7 @@
 }
 
 #bus div section {
+  margin-top: -150px;
   padding: 1em 0;
 }
 
@@ -133,9 +134,9 @@ body {
 }
 
 #classcontainer {
-  margin-top: 25px;
   margin: auto auto;
-  width: 80%;
+  margin-top: 30px;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
