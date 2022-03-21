@@ -77,7 +77,6 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 125px;
-  color: #fff;
 }
 
 #bus div section {
@@ -154,7 +153,12 @@ body {
   font-size: 1vw;
 }
 
+.dateNtime span {
+  margin: 0;
+}
+
 .dateNtime #currentTime {
+  color: white;
   margin-bottom: 15px;
   font-weight: bold;
   font-size: 1.3vw;
@@ -233,10 +237,6 @@ body {
 
 #menu li dl {
   font-size: 1vw;
-}
-
-#menu h2 {
-  color: #fff;
 }
 
 img {
@@ -386,7 +386,7 @@ img {
 
 #Weather-grid div {
   margin: 1vw;
-  margin-top: -0.1vw;
+  margin-top: -1vw;
   height: 10vh;
   text-align: center;
   font-size: 2vw;
@@ -397,7 +397,8 @@ img {
 }
 
 #TempChart {
-  margin-top: -2vw;
+  background-color: #1b1842;
+  margin-top: -2.5vw;
   width: 400px;
   height: 780px;
 }
@@ -405,8 +406,9 @@ img {
 #weather-color-corner {
   background-color: #201b49;
   position: absolute;
-  width: 730px;
+  width: 950px;
   height: 600px;
+  margin-top: -1.5vw;
   z-index: -9999;
 }
 

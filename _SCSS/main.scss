@@ -28,7 +28,12 @@ body {
   text-align: center;
   padding: 30px;
 font-size: 1vw;
+
+span {
+  margin: 0;
+}
   #currentTime {
+    color: white;
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 1.3vw;
@@ -87,7 +92,6 @@ font-size: 1vw;
     }
   }
   h2 {
-    color: $header-text;
   }
 }
 img {
@@ -229,7 +233,7 @@ padding: 10px;
 }
 div{
   margin: 1vw;
-  margin-top: -0.1vw;
+  margin-top: -1vw;
   height: 10vh;
   text-align: center;
   font-size: 2vw;
@@ -241,7 +245,8 @@ svg{
 }
 
 #TempChart{
-  margin-top: -2vw;
+  background-color: $background;
+  margin-top: -2.5vw;
   width: 400px;
   height: 780px;
 }
@@ -249,8 +254,9 @@ svg{
 #weather-color-corner {
   background-color: $second-background;
   position: absolute;
-  width: 730px;
+  width: 950px;
   height: 600px;
+  margin-top: -1.5vw;
   z-index: -9999;
 }
 
