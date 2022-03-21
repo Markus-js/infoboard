@@ -10,7 +10,7 @@
 	.st4{font-size:29.96px;}
 	.st5{fill:#D4000B;}
 	.st6{fill:none;}
-	.st7{font-family:'MyriadPro-Regular';}
+	.st7{fill:#FFFFFF;}
 	.st8{font-size:12px;}
 </style>
 <g id="main-group">
@@ -97,7 +97,7 @@
 	
 		<text id="P018-text_00000157303005836747895600000000567760258523397769_" transform="matrix(1 0 0 1 683.8151 255.65)" class="st2 st3 st4">P022</text>
 </g>
-<circle class="st5" cx="245.2" cy="239.2" r="14.6"/>
+<ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 -29.4375 443.8003)" class="st5" cx="246.1" cy="239.2" rx="14.6" ry="14.6"/>
 <rect x="216.8" y="209.5" class="st6" width="62.8" height="16.9"/>
-<text transform="matrix(1 0 0 1 216.8497 218.0563)" class="st7 st8">Her står du</text>
+<text transform="matrix(1 0 0 1 216.8497 218.0563)" class="st7 st3 st8">Her står du</text>
 </svg>
