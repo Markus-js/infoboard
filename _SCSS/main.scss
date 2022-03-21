@@ -304,17 +304,6 @@ svg{
   color: white
 }
 
-#mid {
-  position: absolute;
-  background-color: black;
-  color: white;
-  left: 47%;
-  border-radius: 10px;
-  padding: 20px;
-  opacity: 0;
-  transition: 300ms ease-in-out;
-  animation: fade 70s infinite linear;
-}
 #newscontainer {
   z-index: 11;
   position: absolute;
@@ -334,11 +323,4 @@ span {
 @keyframes slide {
   from {right: -400%;}
   to {right: 110%;}
-}
-@keyframes fade {
-  0%  {opacity: 1;}
-  5%{ opacity: 1;}
-  6% {opacity: 0;}
-  99% {opacity: 0;}
-  100% {opacity: 1;}
 }
