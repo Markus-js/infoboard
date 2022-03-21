@@ -6,6 +6,7 @@ $fontColor: #AEAEC8;
     // z-index: -9999;
     font-family: arial;
     font-size: 1vw;
+    margin-left: 2.6vw;
     div{
         
         h2{
@@ -23,7 +24,7 @@ $fontColor: #AEAEC8;
                 border-radius: 10px;
                 margin: 1em;
                 p{
-                    padding: 1em;
+                    padding: 0.7em;
                     &:last-child{
                         min-width: 5em;
                         text-align: right;

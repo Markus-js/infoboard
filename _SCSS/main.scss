@@ -1,6 +1,6 @@
 
 @import './grid';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap');
 
 @import "_bus.scss";
 
@@ -8,7 +8,7 @@
 // MAIN
 * {
   //global og universal selector
-  font-family: 'Poppins';
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   color: #AEAEC8;
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@ font-size: 1vw;
   justify-content: center;
   div {
     display: flex;
-    margin: 0 25px;
+    margin: 10px 15px;
     align-items: center;
     div {
       height: 10px;
@@ -63,7 +63,7 @@ font-size: 1vw;
   #dot-section {
     width: 50%;
     img {
-      margin-left: 3vw;
+      margin-left: 2.7vw;
       width: 100%;
     }
   }
@@ -97,10 +97,9 @@ img {
 .dot {
   padding: 1rem;
   background-color: black;
-  margin: 1rem;
   border-radius: 200px;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 #dot-section #P024 {
@@ -210,6 +209,7 @@ padding: 10px;
 #Day0{
 }
 
+
 #MainWeather{
   margin-left: 2vw;
   width: 5.5vw;
@@ -220,6 +220,11 @@ div{
   margin: 1vw;
   height: 10vh;
   text-align: center;
+  font-size: 2vw;
+}
+svg{
+  margin-left: 2.5vw;
+  margin-top: 0.5vw;
 }
 }
 
