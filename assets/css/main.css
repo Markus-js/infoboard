@@ -65,6 +65,7 @@
   font-family: arial;
   font-size: 1vw;
   margin-left: 2.6vw;
+  color: #B8B8D1;
 }
 
 #bus div {
@@ -104,6 +105,32 @@
   text-align: right;
 }
 
+#bus section {
+  margin-top: -120px;
+  padding: 1em 0;
+}
+
+#bus section article {
+  background-color: #201b49;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+#bus section article p {
+  padding: 0.7em;
+}
+
+#bus section article p:last-child {
+  min-width: 5em;
+  text-align: right;
+}
+
 * {
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   color: #B8B8D1;
@@ -134,6 +161,9 @@ body {
 }
 
 #classcontainer {
+  margin: auto auto;
+  margin-top: 30px;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +212,7 @@ body {
   width: 50%;
 }
 
-#kort #dot-section img {
+#kort #dot-section svg {
   margin-left: 2.7vw;
   width: 100%;
 }
@@ -313,8 +343,8 @@ img {
   background-color: brown;
 }
 
-#red {
-  background-color: red;
+#white {
+  background-color: white;
 }
 
 #peru {
@@ -351,6 +381,7 @@ img {
 
 #Weather-grid div {
   margin: 1vw;
+  margin-top: -0.1vw;
   height: 10vh;
   text-align: center;
   font-size: 2vw;
@@ -358,7 +389,6 @@ img {
 
 #Weather-grid svg {
   margin-left: 2.5vw;
-  margin-top: 0.5vw;
 }
 
 #TempChart {
@@ -372,4 +402,43 @@ img {
   width: 730px;
   height: 600px;
   z-index: -9999;
+}
+
+.st0 {
+  fill: none;
+  stroke: #504F78;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: #2A2656;
+}
+
+.st2 {
+  fill: #BCBCF7;
+}
+
+.st3 {
+  font-family: 'IBM Plex Sans Thai Looped';
+}
+
+.st4 {
+  font-size: 29.96px;
+}
+
+.st5 {
+  fill: #D4000B;
+}
+
+.st6 {
+  fill: none;
+}
+
+.st7 {
+  fill: #BCBCF7;
+}
+
+.st8 {
+  font-size: 12px;
 }
