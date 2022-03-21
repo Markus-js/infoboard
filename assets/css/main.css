@@ -134,6 +134,8 @@ body {
 
 #classcontainer {
   margin-top: 25px;
+  margin: auto auto;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
