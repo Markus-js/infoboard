@@ -95,7 +95,7 @@ data.forEach(element => {
         break;
       case "ild030522":
         if (element.Room !== ""){
-          element.Color = "red"
+          element.Color = "white"
           createElementDiv(element.Room, element.Color)
         }
         break;
