@@ -27,19 +27,19 @@ export const weekly = async () =>
          
 // Dagen i dag, skal fremhæves:
       if(currentday.innerHTML === "Mandag"){
-        document.querySelector(".weekday0").style.fontWeight = "bold";
+        document.querySelector(".weekday0").style.fontWeight = "bold", document.querySelector(".weekday0").style.color = "#fff", document.querySelector(".desc0").style.color ="#fff";
       }     
       if(currentday.innerHTML === "Tirsdag"){
-        document.querySelector(".weekday1").style.fontWeight = "bold";
+        document.querySelector(".weekday1").style.fontWeight = "bold", document.querySelector(".weekday1").style.color = "#fff", document.querySelector(".desc1").style.color ="#fff";
       }
       if(currentday.innerHTML === "Onsdag"){
-        document.querySelector(".weekday2").style.fontWeight = "bold";
+        document.querySelector(".weekday2").style.fontWeight = "bold", document.querySelector(".weekday2").style.color = "#fff", document.querySelector(".desc2").style.color ="#fff";
       }
       if(currentday.innerHTML === "Torsdag"){
-        document.querySelector(".weekday3").style.fontWeight = "bold";
+        document.querySelector(".weekday3").style.fontWeight = "bold", document.querySelector(".weekday3").style.color = "#fff", document.querySelector(".desc3").style.color ="#fff";
       }
       if(currentday.innerHTML === "Fredag"){
-        document.querySelector(".weekday4").style.fontWeight = "bold";
+        document.querySelector(".weekday4").style.fontWeight = "bold", document.querySelector(".weekday4").style.color = "#fff", document.querySelector(".desc4").style.color ="#fff";
       }
         }
     }

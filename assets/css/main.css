@@ -15,14 +15,14 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
-  background-color: #24214F;
+  background-color: #201b49;
 }
 
 #menu {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b;
-  background-color: #24214F;
+  background-color: #201b49;
 }
 
 #bus {
@@ -30,7 +30,7 @@
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: c;
-  background-color: #1B183D;
+  background-color: #1b1842;
 }
 
 #kort {
@@ -38,7 +38,7 @@
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: e;
-  background-color: #1B183D;
+  background-color: #1b1842;
 }
 
 #chart {
@@ -46,7 +46,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: g;
-  background-color: #1B183D;
+  background-color: #1b1842;
 }
 
 #weather {
@@ -65,10 +65,11 @@
   font-family: arial;
   font-size: 1vw;
   margin-left: 2.6vw;
+  color: #B8B8D1;
 }
 
 #bus div {
-  color: #aeaec8;
+  color: #B8B8D1;
 }
 
 #bus div h2 {
@@ -76,15 +77,15 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 125px;
+  color: #fff;
 }
 
 #bus div section {
-  margin-top: -120px;
   padding: 1em 0;
 }
 
 #bus div section article {
-  background-color: #24214f;
+  background-color: #201b49;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,9 +105,35 @@
   text-align: right;
 }
 
+#bus section {
+  margin-top: -120px;
+  padding: 1em 0;
+}
+
+#bus section article {
+  background-color: #201b49;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+#bus section article p {
+  padding: 0.7em;
+}
+
+#bus section article p:last-child {
+  min-width: 5em;
+  text-align: right;
+}
+
 * {
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-  color: #AEAEC8;
+  color: #B8B8D1;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -114,7 +141,7 @@
 }
 
 body {
-  background-color: #1B183D;
+  background-color: #1b1842;
   overflow-y: hidden;
   /* Hide vertical scrollbar */
   overflow-x: hidden;
@@ -206,6 +233,10 @@ body {
 
 #menu li dl {
   font-size: 1vw;
+}
+
+#menu h2 {
+  color: #fff;
 }
 
 img {
@@ -350,6 +381,7 @@ img {
 
 #Weather-grid div {
   margin: 1vw;
+  margin-top: -0.1vw;
   height: 10vh;
   text-align: center;
   font-size: 2vw;
@@ -357,7 +389,6 @@ img {
 
 #Weather-grid svg {
   margin-left: 2.5vw;
-  margin-top: 0.5vw;
 }
 
 #TempChart {
@@ -366,7 +397,7 @@ img {
 }
 
 #weather-color-corner {
-  background-color: #24214F;
+  background-color: #201b49;
   position: absolute;
   width: 730px;
   height: 600px;

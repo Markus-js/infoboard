@@ -1,18 +1,39 @@
-$mainColor: #1b183d;
-$secondaryColor: #24214f;
-$fontColor: #aeaec8;
+$mainColor: #1b1842;
+$secondaryColor: #201b49;
+$fontColor: #B8B8D1;
 
-#bus {
-  // z-index: -9999;
-  font-family: arial;
-  font-size: 1vw;
-  margin-left: 2.6vw;
-  div {
-    h2 {
-      font-size: 1.3vw;
-      text-align: center;
-      margin-top: 25px;
-      margin-bottom: 125px;
+#bus{
+    // z-index: -9999;
+    font-family: arial;
+    font-size: 1vw;
+    margin-left: 2.6vw;
+    div{
+        
+        h2{
+            font-size: 1.3vw;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 125px;
+            color: #fff;
+        }
+        section{
+            padding: 1em 0;
+            article{
+                background-color: $secondaryColor;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 10px;
+                margin: 1em;
+                p{
+                    padding: 0.7em;
+                    &:last-child{
+                        min-width: 5em;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    color: $fontColor;
     }
     section {
       margin-top: -120px;
@@ -34,4 +55,4 @@ $fontColor: #aeaec8;
     }
     color: $fontColor;
   }
-}
+
