@@ -104,7 +104,7 @@
 
 * {
   font-family: 'Poppins';
-  color: #AEAEC8;
+  color: #B8B8D1;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -348,6 +348,12 @@ img {
   margin: 1vw;
   height: 10vh;
   text-align: center;
+  font-size: 2vw;
+}
+
+#Weather-grid svg {
+  margin-left: 2.5vw;
+  margin-top: 0.5vw;
 }
 
 #TempChart {

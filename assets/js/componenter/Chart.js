@@ -37,7 +37,7 @@ async function getWeatherData(latitude, longitude) {
     const response = await fetch(apiUrl);
     const Weather = await response.json();
     const labels = [date1.getHours()+":00"]
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 5; i++) {
     //  console.log(Weather.hourly[q].temp)
      date1.setHours(date1.getHours()+2);
      Add0 = date1.getHours()
@@ -114,7 +114,7 @@ switch (true) {
 const Temps = {
     labels,
     datasets: [{
-        data: [Weather.hourly[0].temp,Weather.hourly[2].temp,Weather.hourly[4].temp,Weather.hourly[6].temp,Weather.hourly[8].temp,Weather.hourly[10].temp,Weather.hourly[12].temp,Weather.hourly[14].temp]
+        data: [Weather.hourly[0].temp,Weather.hourly[2].temp,Weather.hourly[4].temp,Weather.hourly[6].temp,Weather.hourly[8].temp,Weather.hourly[10].temp]
         
     }]
 }
@@ -135,12 +135,19 @@ const chart = new Chart(ctx, {
     },
       scales: {
         x: {
+          
           ticks:{
             padding: 0
           },
           grid: {
             display:false
-          }
+          },
+            ticks: {
+                callback: function(value, index, ticks) {
+                    return '';
+                },
+            }
+          
         },
           y: {
             beginAtZero: true,
@@ -150,7 +157,7 @@ const chart = new Chart(ctx, {
               ticks: {
                   callback: function(value, index, ticks) {
                       return  value + ' °C';
-                  }
+                  },
               }
           }
       }
@@ -159,6 +166,7 @@ const chart = new Chart(ctx, {
 
 for (let i = 0; i < 6; i++) {
 document.getElementById("Day"+i).setAttribute("href", "#"+Weather.hourly[q].weather[0].main);
+document.getElementById("Time"+i).innerHTML = labels[i]
 console.log(Weather.hourly[q].weather[0].main)
 q = q + 2
 }
