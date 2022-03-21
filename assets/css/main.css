@@ -3,7 +3,10 @@
   height: 100vh;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "a c e" "b c e" "g g g" "h h h";
+      grid-template-areas: "a c e"
+ "b c e"
+ "g g g"
+ "h h h";
   -ms-grid-columns: 1.5fr 2fr 4.5fr;
       grid-template-columns: 1.5fr 2fr 4.5fr;
   -ms-grid-rows: 1fr 3.7fr 2fr 1fr;
@@ -104,6 +107,7 @@
 }
 
 * {
+
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   color: #AEAEC8;
   margin: 0;
@@ -348,6 +352,12 @@ img {
   margin: 1vw;
   height: 10vh;
   text-align: center;
+  font-size: 2vw;
+}
+
+#Weather-grid svg {
+  margin-left: 2.5vw;
+  margin-top: 0.5vw;
 }
 
 #TempChart {
