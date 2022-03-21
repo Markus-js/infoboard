@@ -411,3 +411,99 @@ img {
 .st8 {
   font-size: 12px;
 }
+
+.news {
+  overflow-x: hidden;
+  white-space: nowrap;
+  font-size: 1vw;
+  overflow-y: hidden;
+}
+
+#news1 {
+  margin-top: 20px;
+  position: absolute;
+  -webkit-animation: slide 70s infinite linear;
+          animation: slide 70s infinite linear;
+}
+
+#left {
+  position: absolute;
+  background-color: Black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#right {
+  position: absolute;
+  background-color: black;
+  right: 0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#mid {
+  position: absolute;
+  background-color: black;
+  left: 47%;
+  border-radius: 10px;
+  padding: 20px;
+  opacity: 0;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  -webkit-animation: fade 70s infinite linear;
+          animation: fade 70s infinite linear;
+}
+
+@-webkit-keyframes slide {
+  from {
+    right: -285%;
+  }
+  to {
+    right: 110%;
+  }
+}
+
+@keyframes slide {
+  from {
+    right: -285%;
+  }
+  to {
+    right: 110%;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
