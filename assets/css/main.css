@@ -68,7 +68,7 @@
 }
 
 #bus div {
-  color: #AEAEC8;
+  color: #aeaec8;
 }
 
 #bus div h2 {
@@ -79,12 +79,12 @@
 }
 
 #bus div section {
-  margin-top: -125px;
+  margin-top: -120px;
   padding: 1em 0;
 }
 
 #bus div section article {
-  background-color: #24214F;
+  background-color: #24214f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,7 +185,7 @@ body {
   width: 50%;
 }
 
-#kort #dot-section img {
+#kort #dot-section svg {
   margin-left: 2.7vw;
   width: 100%;
 }
@@ -371,4 +371,43 @@ img {
   width: 730px;
   height: 600px;
   z-index: -9999;
+}
+
+.st0 {
+  fill: none;
+  stroke: #504F78;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: #2A2656;
+}
+
+.st2 {
+  fill: #BCBCF7;
+}
+
+.st3 {
+  font-family: 'IBM Plex Sans Thai Looped';
+}
+
+.st4 {
+  font-size: 29.96px;
+}
+
+.st5 {
+  fill: #D4000B;
+}
+
+.st6 {
+  fill: none;
+}
+
+.st7 {
+  fill: #BCBCF7;
+}
+
+.st8 {
+  font-size: 12px;
 }
