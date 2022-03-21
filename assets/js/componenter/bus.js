@@ -1,24 +1,23 @@
 export const bus = () => {};
 
-doRequest()
+doRequest();
 
 const busWrapper = document.createElement('div');
 
-    const busHeader = document.createElement('h2');
-    busHeader.innerText="BUSTIDER";
-    busWrapper.appendChild(busHeader);
+const busHeader = document.createElement('h2');
+busHeader.innerText="BUSTIDER";
+busWrapper.appendChild(busHeader);
 
-    let busList = document.createElement('section');
-    busWrapper.appendChild(busList);
+let busList = document.createElement('section');
+busWrapper.appendChild(busList);
 
-    //poster det til index.html
-    const post = document.getElementById('bus');
-    post.appendChild(busWrapper);
+//poster det til index.html
+const post = document.getElementById('bus');
+post.appendChild(busWrapper);
 
 async function doRequest(){
-    const url = "https://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400602&id2=8519734&format=json";
+    const url = "http://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400602&id2=851973402&rttime&format=json&useBus=1";
     let res = await fetch(url);
-
     if (res.ok) {
         let json = await res.json();
 
@@ -44,20 +43,23 @@ function build(data) {
         
             const daysDifference = Math.ceil(difference/1000/60);
     
-            console.log(daysDifference);
-    
             let timeToBus = "";
             
-            if(daysDifference < 60){
+            if(daysDifference <= 60){
                 timeToBus = `${daysDifference} Min`;
             }else{
                 let timeToBusHours = Math.trunc(daysDifference / 60);
                 let timeToBusMin = daysDifference % 60;
-                timeToBus = `${timeToBusHours}:${timeToBusMin} Timer`;
+                let timeToBusMinResult = "";
+                if (timeToBusMin < 10){
+                    timeToBusMinResult = "0" + timeToBusMin;
+                } else{
+                    timeToBusMinResult = timeToBusMin;
+                }
+                timeToBus = `${timeToBusHours}:${timeToBusMinResult} Timer`;
             }
     
-        // post
-    
+            // post
             let busTap = document.createElement('article');
             busTap.innerHTML += `
                 <p>${item.line}</p>
@@ -69,7 +71,6 @@ function build(data) {
             return;
         }
     });
-   
 }
 
 setInterval(() => {
