@@ -1,7 +1,5 @@
 export const bus = () => {};
 
-doRequest();
-
 const busWrapper = document.createElement('div');
 
 const busHeader = document.createElement('h2');
@@ -15,8 +13,16 @@ busWrapper.appendChild(busList);
 const post = document.getElementById('bus');
 post.appendChild(busWrapper);
 
+loadingscreen();
+
+function loadingscreen(){
+    console.log("test");
+    busList.innerText = "test";
+    doRequest()
+}
+
 async function doRequest(){
-    const url = "http://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400602&id2=851973402&rttime&format=json&useBus=1";
+    const url = "https://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400602&id2=851973402&rttime&format=json&useBus=1";
     let res = await fetch(url);
     if (res.ok) {
         let json = await res.json();
