@@ -233,7 +233,7 @@ padding: 10px;
 }
 div{
   margin: 1vw;
-  margin-top: -1vw;
+  margin-top: -1.5vw;
   height: 10vh;
   text-align: center;
   font-size: 2vw;
@@ -254,7 +254,7 @@ svg{
 #weather-color-corner {
   background-color: $second-background;
   position: absolute;
-  width: 950px;
+  width: 780px;
   height: 600px;
   margin-top: -1.5vw;
   z-index: -9999;

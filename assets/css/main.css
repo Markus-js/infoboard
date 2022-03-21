@@ -386,7 +386,7 @@ img {
 
 #Weather-grid div {
   margin: 1vw;
-  margin-top: -1vw;
+  margin-top: -1.5vw;
   height: 10vh;
   text-align: center;
   font-size: 2vw;
@@ -406,7 +406,7 @@ img {
 #weather-color-corner {
   background-color: #201b49;
   position: absolute;
-  width: 950px;
+  width: 780px;
   height: 600px;
   margin-top: -1.5vw;
   z-index: -9999;
