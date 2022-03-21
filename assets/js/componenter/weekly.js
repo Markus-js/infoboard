@@ -22,7 +22,7 @@ export const weekly = async () =>
       const thisDay = document.querySelector(`.desc${i}`);
                         
 // Vi henter dataene fra Api'en og tilføjer hver ret til det tilhørende Index.               
-      thisDay.innerHTML = data.Days[i].Dish + "<br>";   
+      thisDay.innerHTML = data.Days[i].Dish.replace('- kr. 28,00','') + "<br>";   
                         }
          
 // Dagen i dag, skal fremhæves:
