@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap");
 #main {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "a c e" "b c e" "g g g" "h h h";
+      grid-template-areas: "a c e"
+ "b c e"
+ "g g g"
+ "h h h";
   -ms-grid-columns: 1.5fr 2fr 4.5fr;
       grid-template-columns: 1.5fr 2fr 4.5fr;
   -ms-grid-rows: 1fr 3.7fr 2fr 1fr;
@@ -64,6 +67,7 @@
 #bus {
   font-family: arial;
   font-size: 1vw;
+  margin-left: 2.6vw;
 }
 
 #bus div {
@@ -94,7 +98,7 @@
 }
 
 #bus div section article p {
-  padding: 1em;
+  padding: 0.7em;
 }
 
 #bus div section article p:last-child {
@@ -103,8 +107,9 @@
 }
 
 * {
-  font-family: 'Poppins';
-  color: #B8B8D1;
+
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  color: #AEAEC8;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -146,7 +151,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 25px;
+  margin: 10px 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -181,7 +186,7 @@ body {
 }
 
 #kort #dot-section img {
-  margin-left: 3vw;
+  margin-left: 2.7vw;
   width: 100%;
 }
 
@@ -216,10 +221,9 @@ img {
 .dot {
   padding: 1rem;
   background-color: black;
-  margin: 1rem;
   border-radius: 200px;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 #dot-section #P024 {
