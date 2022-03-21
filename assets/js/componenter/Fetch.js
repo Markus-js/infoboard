@@ -136,3 +136,33 @@ function createElementDiv(room,color){
   dotSection.appendChild(div);
 }
 
+let newscontainer1 = document.getElementById("news1")
+
+let news = ""
+
+async function getNewsData() {
+
+    const api = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.dr.dk%2Fnyheder%2Fservice%2Ffeeds%2Fallenyheder`
+      try {
+        const response = await fetch(api);
+        const data = await response.json();
+        return data
+      } catch (error) {
+        // RETRY FETCH
+        if (errorCountAmountOfTryies < 3) {
+          getNewsData();
+          errorCountAmountOfTryies++;
+        }
+        console.log("whoops, something went wrong!", error);
+      }
+    }
+    let newsData = await getNewsData()
+
+  export function getNews() {
+        newsData.items.forEach(element => {
+            console.log(element.title)
+            news += `<span>${element.title}</span>`
+        });
+        newscontainer1.innerHTML = news
+        
+    }

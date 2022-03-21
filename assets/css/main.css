@@ -363,6 +363,11 @@ img {
   background-color: blue;
 }
 
+#weather {
+  z-index: 10;
+  margin-top: -1vw;
+}
+
 #Weather-grid {
   display: -ms-grid;
   display: grid;
@@ -392,6 +397,7 @@ img {
 }
 
 #TempChart {
+  margin-top: -2vw;
   width: 400px;
   height: 780px;
 }
@@ -462,6 +468,7 @@ img {
   background-color: Black;
   border-radius: 10px;
   padding: 20px;
+  color: white;
 }
 
 #right {
@@ -470,11 +477,13 @@ img {
   right: 0;
   border-radius: 10px;
   padding: 20px;
+  color: white;
 }
 
 #mid {
   position: absolute;
   background-color: black;
+  color: white;
   left: 47%;
   border-radius: 10px;
   padding: 20px;
@@ -485,9 +494,25 @@ img {
           animation: fade 70s infinite linear;
 }
 
+#newscontainer {
+  z-index: 11;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.25vw;
+  background-color: #504F78;
+}
+
+span {
+  padding: 0 20px;
+  margin: 0 300px;
+  border-radius: 30px;
+  color: white;
+}
+
 @-webkit-keyframes slide {
   from {
-    right: -285%;
+    right: -400%;
   }
   to {
     right: 110%;
@@ -496,7 +521,7 @@ img {
 
 @keyframes slide {
   from {
-    right: -285%;
+    right: -400%;
   }
   to {
     right: 110%;
@@ -508,13 +533,13 @@ img {
     opacity: 1;
   }
   5% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  95% {
     opacity: 1;
+  }
+  6% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -526,13 +551,13 @@ img {
     opacity: 1;
   }
   5% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  95% {
     opacity: 1;
+  }
+  6% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
   }
   100% {
     opacity: 1;

@@ -208,7 +208,10 @@ img {
 #blue {
   background-color: blue;
 }
-
+#weather {
+  z-index: 10;
+  margin-top: -1vw;
+}
 #Weather-grid{
   display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -238,6 +241,7 @@ svg{
 }
 
 #TempChart{
+  margin-top: -2vw;
   width: 400px;
   height: 780px;
 }
@@ -269,6 +273,7 @@ svg{
   white-space: nowrap;
   font-size: 1vw;
   overflow-y: hidden;
+  
  
 }
 #news1 {
@@ -282,6 +287,7 @@ svg{
   background-color: Black;
   border-radius: 10px;
   padding: 20px;
+  color: white
 }
 #right {
   position: absolute;
@@ -289,11 +295,13 @@ svg{
   right: 0;
   border-radius: 10px;
   padding: 20px;
+  color: white
 }
 
 #mid {
   position: absolute;
   background-color: black;
+  color: white;
   left: 47%;
   border-radius: 10px;
   padding: 20px;
@@ -301,14 +309,30 @@ svg{
   transition: 300ms ease-in-out;
   animation: fade 70s infinite linear;
 }
+#newscontainer {
+  z-index: 11;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.25vw;
+  background-color: #504F78;
+}
+span {
+ 
+  padding: 0 20px;
+  margin: 0 300px;
+  border-radius: 30px;
+  color: white;
+}
+
 @keyframes slide {
-  from {right: -285%;}
+  from {right: -400%;}
   to {right: 110%;}
 }
 @keyframes fade {
   0%  {opacity: 1;}
-  5% { opacity: 0;}
-  50% {opacity: 0;}
-  95% {opacity: 1;}
+  5%{ opacity: 1;}
+  6% {opacity: 0;}
+  99% {opacity: 0;}
   100% {opacity: 1;}
 }
