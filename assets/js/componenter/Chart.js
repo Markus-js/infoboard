@@ -30,7 +30,7 @@ async function getWeatherData(latitude, longitude) {
   // &units=metric
   const unit = "metric";
   const API_KEY = "dcf74a579d1a7bdab77b86e3da8f7ac3";
-  const apiUrl = `http://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude={part}&units=${unit}&appid=${API_KEY}`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude={part}&units=${unit}&appid=${API_KEY}`;
   let date1 = new Date();
 
   try {
