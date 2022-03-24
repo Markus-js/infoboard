@@ -16,8 +16,8 @@ post.appendChild(busWrapper);
 loadingscreen();
 
 function loadingscreen(){
-    console.log("test");
-    busList.innerText = "test";
+    console.log("bus loading...");
+    busList.innerText = "Loading...";
     doRequest()
 }
 
@@ -41,7 +41,7 @@ function build(data) {
         
         if(idx < 4) {
             const dateSplit = item.date.split(".");
-            const dateRestructure = dateSplit[1] + "-" + dateSplit[0] + "-" + dateSplit[2];
+            const dateRestructure = dateSplit[1] + "/" + dateSplit[0] + "/" + dateSplit[2];
     
             const busArriving  = Date.parse(`${dateRestructure} ${item.time}:00`);
     
@@ -50,7 +50,6 @@ function build(data) {
             const daysDifference = Math.ceil(difference/1000/60);
     
             let timeToBus = "";
-            
             if(daysDifference <= 60){
                 timeToBus = `${daysDifference} Min`;
             }else{
@@ -63,6 +62,7 @@ function build(data) {
                     timeToBusMinResult = timeToBusMin;
                 }
                 timeToBus = `${timeToBusHours}:${timeToBusMinResult} Timer`;
+                
             }
     
             // post
