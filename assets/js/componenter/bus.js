@@ -21,15 +21,31 @@ function loadingscreen(){
     doRequest()
 }
 
+let statusOfFetch ="";
+
 async function doRequest(){
     const url = "https://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400602&id2=851973402&rttime&format=json&useBus=1";
     let res = await fetch(url);
     if (res.ok) {
         let json = await res.json();
 
-         build(json);
-    } else {
+        build(json);
+        
+        if(res.status === 200){
+            statusOfFetch = "working ✓ 'OK";
+        }else if(res.status === 201){
+            statusOfFetch = "working ✓ 'Created";
+        }else if(res.status === 202){
+            statusOfFetch = "working ✓ 'Accepted";
+        }else{
+            statusOfFetch = "status look it up your self: " + res.status;
+        }
+    
+    }else {
         return `HTTP error: ${res.status}`;
+        if(res.status){
+            statusOfFetch = "working ✖ StatusCode:" + res.status;
+        }
     }
 }
 
@@ -62,7 +78,6 @@ function build(data) {
                     timeToBusMinResult = timeToBusMin;
                 }
                 timeToBus = `${timeToBusHours}:${timeToBusMinResult} Timer`;
-                
             }
     
             // post
@@ -81,4 +96,5 @@ function build(data) {
 
 setInterval(() => {
     doRequest()
+    console.log("bus Refresh '" + new Date().toLocaleString() + "' -> " + "Fetch: " + statusOfFetch);
 }, 5000)
