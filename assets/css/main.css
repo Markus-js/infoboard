@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap");
 #main {
   height: 100vh;
@@ -20,17 +21,17 @@
 
 #bus {
   grid-area: c;
-  background-color: #19181d;
+  background-color: transparent;
 }
 
 #kort {
   grid-area: e;
-  background-color: #19181d;
+  background-color: transparent;
 }
 
 #chart {
   grid-area: g;
-  background-color: #19181d;
+  background-color: transparent;
 }
 
 #weather {
@@ -113,7 +114,7 @@
 }
 
 body {
-  background-color: #19181d;
+  background: linear-gradient(90deg, #0b0918 0%, #0d0b1f 100%);
   overflow-y: hidden;
   /* Hide vertical scrollbar */
   overflow-x: hidden;
@@ -132,8 +133,9 @@ body {
 
 .dateNtime #currentTime {
   color: white;
+  font-family: 'IBM Plex Sans Thai';
   margin-bottom: 15px;
-  font-weight: lighter;
+  font-weight: 200;
   font-size: 2.5vw;
 }
 
@@ -186,9 +188,10 @@ body {
 }
 
 #menu {
-  font-size: 0.9vw;
+  font-size: 0.8vw;
   text-align: center;
-  height: 90%;
+  height: 78%;
+  padding-top: 3vw;
 }
 
 #menu ul {
@@ -196,12 +199,12 @@ body {
 }
 
 #menu li {
-  font-size: 1vw;
-  margin-bottom: 1.5vw;
+  font-size: 0.8vw;
+  margin-bottom: 1vw;
 }
 
 #menu li dl {
-  font-size: 1vw;
+  font-size: 0.6vw;
 }
 
 img {
@@ -254,25 +257,25 @@ img {
 
 #dot-section #SUs151 {
   position: absolute;
-  bottom: 30%;
+  bottom: 26%;
   right: 38%;
 }
 
 #dot-section #N112b {
   position: absolute;
-  bottom: 30%;
+  bottom: 26%;
   left: 47%;
 }
 
 #dot-section #E102S {
   position: absolute;
-  bottom: 30%;
+  bottom: 26%;
   left: 30%;
 }
 
 #dot-section #N120 {
   position: absolute;
-  bottom: 30%;
+  bottom: 26%;
   left: 14%;
 }
 
@@ -427,12 +430,16 @@ img {
 
 #left {
   position: absolute;
-  background-color: #e42313;
+  background: linear-gradient(270deg, #ff0f0f 0%, #7c0000 77%);
   padding: 20px;
   color: white;
   font-style: italic;
-  padding-left: 2vw;
+  font-weight: bold;
+  padding-left: 4vw;
   padding-right: 2vw;
+  left: -2vw;
+  letter-spacing: 0.1vw;
+  transform: skew(-20deg, 0deg);
 }
 
 #newscontainer {
@@ -442,6 +449,7 @@ img {
   width: 100%;
   height: 2.25vw;
   background-color: #504F78;
+  padding-bottom: 0.7vw;
 }
 
 span {
@@ -458,4 +466,54 @@ span {
   to {
     right: 110%;
   }
+}
+
+.classname-1 {
+  isolation: isolate;
+}
+
+.classname-2 {
+  mix-blend-mode: screen;
+}
+
+.classname-3, .classname-5 {
+  fill: none;
+}
+
+.classname-3 {
+  stroke: #fff;
+  stroke-width: 4px;
+}
+
+.classname-3, .classname-5, .classname-6 {
+  stroke-miterlimit: 10;
+}
+
+.classname-4, .classname-7, .classname-8 {
+  fill: #333;
+}
+
+.classname-5, .classname-6 {
+  stroke: #333;
+  stroke-width: 3px;
+}
+
+.classname-6 {
+  fill: #fff;
+}
+
+.classname-7 {
+  font-size: 21px;
+}
+
+.classname-7, .classname-8 {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+.classname-8 {
+  font-size: 11px;
+}
+
+.your-location {
+  fill: white;
 }

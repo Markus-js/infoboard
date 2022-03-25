@@ -73,27 +73,27 @@ async function getWeatherData(latitude, longitude) {
 
     switch (true) {
       case TempRangeMax <= 3:
-        Gradient.addColorStop(0, "rgba(131,238,255,0.9)");
+        Gradient.addColorStop(0, "rgba(131,238,255,0.7)");
         Gradient.addColorStop(0.9, "rgba(131,238,255,0.3)");
         Gradient.addColorStop(1, "rgba(255,255,255,0.1)");
         break;
       case TempRangeMax <= 10:
-        Gradient.addColorStop(0, "rgba(255,255,51,0.9)");
+        Gradient.addColorStop(0, "rgba(255,255,51,0.7)");
         Gradient.addColorStop(0.7, "rgba(255,255,51,0.3)");
         Gradient.addColorStop(1, "rgba(131,238,255,0.1)");
         break;
       case TempRangeMax <= 16:
-        Gradient.addColorStop(0, "rgba(253, 147, 8,0.9)");
+        Gradient.addColorStop(0, "rgba(253, 147, 8,0.7)");
         Gradient.addColorStop(0.6, "rgba(255,255,51,0.3)");
         Gradient.addColorStop(1, "rgba(255,255,51,0.1)");
         break;
       case TempRangeMax <= 32:
-        Gradient.addColorStop(0, "rgba(252, 87, 94,0.9)");
+        Gradient.addColorStop(0, "rgba(252, 87, 94,0.7)");
         Gradient.addColorStop(0.7, "rgba(247, 180, 44,0.3)");
         Gradient.addColorStop(1, "rgba(253, 147, 8,0.1)");
         break;
       case TempRangeMax <= 60:
-        Gradient.addColorStop(0, "rgba(252, 87, 94,0.9)");
+        Gradient.addColorStop(0, "rgba(252, 87, 94,0.7)");
         Gradient.addColorPStop(0.5, "rgba(252, 87, 94,0.3)");
         Gradient.addColorStop(1, "rgba(228,0,120,0.1)");
         break;
