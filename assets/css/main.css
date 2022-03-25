@@ -1,62 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap");
 #main {
   height: 100vh;
-  display: -ms-grid;
   display: grid;
-  grid-template-areas:
-    "a c e"
-    "b c e"
-    "g g g"
-    "h h h";
-  -ms-grid-columns: 1.5fr 2fr 4.5fr;
+  grid-template-areas: "a c e" "b c e" "g g g" "h h h";
   grid-template-columns: 1.5fr 2fr 4.5fr;
-  -ms-grid-rows: 1fr 3.7fr 2fr 1fr;
   grid-template-rows: 1fr 3.7fr 2fr 1fr;
 }
 
 .dateNtime {
   z-index: -9997;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: a;
-  background-color: #211f2a;
+  background-color: #201b49;
 }
 
 #menu {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: b;
-  background-color: #211f2a;
+  background-color: #201b49;
 }
 
 #bus {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
   grid-area: c;
   background-color: #19181d;
 }
 
 #kort {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
   grid-area: e;
   background-color: #19181d;
 }
 
 #chart {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: g;
   background-color: #19181d;
 }
 
 #weather {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: h;
 }
 
@@ -69,11 +46,11 @@
   font-family: arial;
   font-size: 1vw;
   margin-left: 2.6vw;
-  color: #b8b8d1;
+  color: #B8B8D1;
 }
 
 #bus div {
-  color: #b8b8d1;
+  color: #B8B8D1;
 }
 
 #bus div h2 {
@@ -88,12 +65,8 @@
 }
 
 #bus div section article {
-  background-color: #211f2a;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: #201b49;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   border-radius: 10px;
   margin: 1em;
@@ -114,12 +87,8 @@
 }
 
 #bus section article {
-  background-color: #211f2a;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: #201b49;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   border-radius: 10px;
   margin: 1em;
@@ -135,7 +104,7 @@
 }
 
 * {
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   color: #b8b8d1;
   margin: 0;
   padding: 0;
@@ -164,31 +133,22 @@ body {
 .dateNtime #currentTime {
   color: white;
   margin-bottom: 15px;
-  font-weight: bold;
-  font-size: 1.3vw;
+  font-weight: lighter;
+  font-size: 2.5vw;
 }
 
 #classcontainer {
   margin: auto auto;
   margin-top: 30px;
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 #classcontainer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 10px 15px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -204,11 +164,7 @@ body {
 #kort ul {
   margin-top: 10px;
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -225,9 +181,14 @@ body {
   width: 100%;
 }
 
+#bus div article {
+  box-shadow: rgba(0, 0, 0, 0.788) 0vw 0vw 1vw;
+}
+
 #menu {
-  font-size: 0.7vw;
+  font-size: 0.9vw;
   text-align: center;
+  height: 90%;
 }
 
 #menu ul {
@@ -236,7 +197,7 @@ body {
 
 #menu li {
   font-size: 1vw;
-  margin-bottom: 10px;
+  margin-bottom: 1.5vw;
 }
 
 #menu li dl {
@@ -254,7 +215,7 @@ img {
 }
 
 .dot {
-  padding: 1rem;
+  padding: 0.1rem;
   background-color: black;
   border-radius: 200px;
   width: 20px;
@@ -263,13 +224,13 @@ img {
 
 #dot-section #P024 {
   position: absolute;
-  right: 1%;
+  right: 2%;
   top: 20%;
 }
 
 #dot-section #P025 {
   position: absolute;
-  right: 16%;
+  right: 19%;
   top: 20%;
 }
 
@@ -288,31 +249,31 @@ img {
 #dot-section #P027-4 {
   position: absolute;
   top: 20%;
-  left: 33%;
+  left: 30%;
 }
 
 #dot-section #SUs151 {
   position: absolute;
-  bottom: 25%;
-  right: 35%;
+  bottom: 30%;
+  right: 38%;
 }
 
 #dot-section #N112b {
   position: absolute;
-  bottom: 19%;
+  bottom: 30%;
   left: 47%;
 }
 
 #dot-section #E102S {
   position: absolute;
-  bottom: 19%;
-  left: 32%;
+  bottom: 30%;
+  left: 30%;
 }
 
 #dot-section #N120 {
   position: absolute;
-  bottom: 19%;
-  left: 18%;
+  bottom: 30%;
+  left: 14%;
 }
 
 #lightblue {
@@ -373,9 +334,7 @@ img {
 }
 
 #Weather-grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 10px;
 }
@@ -384,7 +343,6 @@ img {
   margin-left: 2vw;
   width: 5.5vw;
   height: 6vw;
-  -webkit-transform: scale(1.6);
   transform: scale(1.6);
 }
 
@@ -401,14 +359,13 @@ img {
 }
 
 #TempChart {
-  background-color: #19181d;
   margin-top: -2.5vw;
   width: 400px;
   height: 780px;
 }
 
 #weather-color-corner {
-  background-color: #211f2a;
+  background-color: #201b49;
   position: absolute;
   width: 775px;
   height: 600px;
@@ -418,21 +375,21 @@ img {
 
 .st0 {
   fill: none;
-  stroke: #504f78;
+  stroke: #504F78;
   stroke-width: 3;
   stroke-miterlimit: 10;
 }
 
 .st1 {
-  fill: #2a2656;
+  fill: #2A2656;
 }
 
 .st2 {
-  fill: #bcbcf7;
+  fill: #BCBCF7;
 }
 
 .st3 {
-  font-family: "IBM Plex Sans Thai Looped";
+  font-family: 'IBM Plex Sans Thai Looped';
 }
 
 .st4 {
@@ -440,7 +397,7 @@ img {
 }
 
 .st5 {
-  fill: #d4000b;
+  fill: #D4000B;
 }
 
 .st6 {
@@ -448,7 +405,7 @@ img {
 }
 
 .st7 {
-  fill: #bcbcf7;
+  fill: #BCBCF7;
 }
 
 .st8 {
@@ -458,30 +415,24 @@ img {
 .news {
   overflow-x: hidden;
   white-space: nowrap;
-  font-size: 1vw;
+  font-size: 1.4vw;
   overflow-y: hidden;
 }
 
 #news1 {
   margin-top: 20px;
   position: absolute;
-  -webkit-animation: slide 70s infinite linear;
   animation: slide 70s infinite linear;
 }
 
 #left {
   position: absolute;
-  background-color: Black;
+  background-color: #e42313;
   padding: 20px;
   color: white;
-}
-
-#right {
-  position: absolute;
-  background-color: black;
-  right: 0;
-  padding: 20px;
-  color: white;
+  font-style: italic;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 #newscontainer {
@@ -490,7 +441,7 @@ img {
   bottom: 0;
   width: 100%;
   height: 2.25vw;
-  background-color: #504f78;
+  background-color: #504F78;
 }
 
 span {
@@ -498,15 +449,6 @@ span {
   margin: 0 300px;
   border-radius: 30px;
   color: white;
-}
-
-@-webkit-keyframes slide {
-  from {
-    right: -400%;
-  }
-  to {
-    right: 110%;
-  }
 }
 
 @keyframes slide {
