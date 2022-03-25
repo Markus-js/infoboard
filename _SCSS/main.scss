@@ -35,8 +35,8 @@ span {
   #currentTime {
     color: white;
     margin-bottom: 15px;
-    font-weight: bold;
-    font-size: 1.3vw;
+    font-weight: lighter;
+    font-size: 2.5vw;
   }
 }
 #classcontainer {
@@ -78,15 +78,24 @@ span {
   }
 }
 
+#bus {
+  div {
+    article {
+      box-shadow: rgba(0, 0, 0, 0.788) 0vw 0vw 1vw;
+    }
+  }
+}
+
 #menu {
-  font-size: 0.7vw;
+  font-size: 0.9vw;
   text-align: center;
+  height: 90%;
   ul {
     margin: 10px;
   }
   li {
     font-size: 1vw;
-    margin-bottom: 10px;
+    margin-bottom: 1.5vw;
     dl {
       font-size: 1vw;
     }
@@ -106,7 +115,7 @@ img {
 }
 
 .dot {
-  padding: 1rem;
+  padding: 0.1rem;
   background-color: black;
   border-radius: 200px;
   width: 20px;
@@ -115,13 +124,13 @@ img {
 
 #dot-section #P024 {
   position: absolute;
-  right: 1%;
+  right: 2%;
   top: 20%;
 }
 
 #dot-section #P025 {
   position: absolute;
-  right: 16%;
+  right: 19%;
   top: 20%;
 }
 
@@ -140,31 +149,31 @@ img {
 #dot-section #P027-4 {
   position: absolute;
   top: 20%;
-  left: 33%;
+  left: 30%;
 }
 
 #dot-section #SUs151 {
   position: absolute;
-  bottom: 25%;
-  right: 35%;
+  bottom: 30%;
+  right: 38%;
 }
 
 #dot-section #N112b {
   position: absolute;
-  bottom: 19%;
+  bottom: 30%;
   left: 47%;
 }
 
 #dot-section #E102S {
   position: absolute;
-  bottom: 19%;
-  left: 32%;
+  bottom: 30%;
+  left: 30%;
 }
 
 #dot-section #N120 {
   position: absolute;
-  bottom: 19%;
-  left: 18%;
+  bottom: 30%;
+  left: 14%;
 }
 
 #lightblue {
@@ -245,7 +254,6 @@ svg{
 }
 
 #TempChart{
-  background-color: $background;
   margin-top: -2.5vw;
   width: 400px;
   height: 780px;
@@ -277,7 +285,7 @@ svg{
 .news {
   overflow-x: hidden;
   white-space: nowrap;
-  font-size: 1vw;
+  font-size: 1.4vw;
   overflow-y: hidden;
   
  
@@ -290,16 +298,12 @@ svg{
 
 #left {
   position: absolute;
-  background-color: Black;
+  background-color: rgb(228, 35, 19);
   padding: 20px;
-  color: white
-}
-#right {
-  position: absolute;
-  background-color: black;
-  right: 0;
-  padding: 20px;
-  color: white
+  color: white;
+  font-style: italic;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 #newscontainer {
