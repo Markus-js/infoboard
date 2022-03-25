@@ -28,6 +28,6 @@ export const dateNTime = async () => {
     let months = month[d.getMonth()];
     let y = d.getFullYear();
     currentday.innerHTML = (weekdays);
-    date.innerHTML = (" d. " + today + ". " + months + ", " + y);
+    date.innerHTML = (today + ". " + months + " " + y);
  
 };

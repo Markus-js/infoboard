@@ -1,5 +1,6 @@
 
 @import './grid';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap');
 
 @import "_bus.scss";
@@ -17,7 +18,7 @@
 }
 
 body {
-  background-color: $background;
+  background: linear-gradient(90deg, rgba(11,9,24,1) 0%, rgba(13,11,31,1) 100%);
   overflow-y: hidden;
   /* Hide vertical scrollbar */
   overflow-x: hidden;
@@ -34,8 +35,9 @@ span {
 }
   #currentTime {
     color: white;
+    font-family: 'IBM Plex Sans Thai';
     margin-bottom: 15px;
-    font-weight: lighter;
+    font-weight: 200;
     font-size: 2.5vw;
   }
 }
@@ -87,17 +89,18 @@ span {
 }
 
 #menu {
-  font-size: 0.9vw;
+  font-size: 0.8vw;
   text-align: center;
-  height: 90%;
+  height: 78%;
+  padding-top: 3vw;
   ul {
     margin: 10px;
   }
   li {
-    font-size: 1vw;
-    margin-bottom: 1.5vw;
+    font-size: 0.8vw;
+    margin-bottom: 1vw;
     dl {
-      font-size: 1vw;
+      font-size: 0.6vw;
     }
   }
   h2 {
@@ -154,25 +157,25 @@ img {
 
 #dot-section #SUs151 {
   position: absolute;
-  bottom: 30%;
+  bottom: 26%;
   right: 38%;
 }
 
 #dot-section #N112b {
   position: absolute;
-  bottom: 30%;
+  bottom: 26%;
   left: 47%;
 }
 
 #dot-section #E102S {
   position: absolute;
-  bottom: 30%;
+  bottom: 26%;
   left: 30%;
 }
 
 #dot-section #N120 {
   position: absolute;
-  bottom: 30%;
+  bottom: 26%;
   left: 14%;
 }
 
@@ -293,17 +296,27 @@ svg{
 #news1 {
   margin-top: 20px;
   position: absolute;
-  animation: slide 70s infinite linear
+  animation: slide 70s infinite linear;
 }
 
 #left {
   position: absolute;
-  background-color: rgb(228, 35, 19);
+  background: linear-gradient(270deg, rgba(255,15,15,1) 0%, rgba(124,0,0,1) 77%);
   padding: 20px;
   color: white;
   font-style: italic;
-  padding-left: 2vw;
+  font-weight: bold;
+  padding-left: 4vw;
   padding-right: 2vw;
+  left: -2vw;
+  letter-spacing: 0.1vw;
+
+  //Skew
+  -moz-transform: skew(-20deg, 0deg);
+-webkit-transform: skew(-20deg, 0deg);
+-o-transform: skew(-20deg, 0deg);
+-ms-transform: skew(-20deg, 0deg);
+transform: skew(-20deg, 0deg);
 }
 
 #newscontainer {
@@ -313,6 +326,7 @@ svg{
   width: 100%;
   height: 2.25vw;
   background-color: #504F78;
+  padding-bottom: 0.7vw;
 }
 span {
  
@@ -325,4 +339,42 @@ span {
 @keyframes slide {
   from {right: -400%;}
   to {right: 110%;}
+}
+
+.classname-1 {
+  isolation:isolate;
+}
+.classname-2 {
+  mix-blend-mode:screen;
+}.classname-3,.classname-5 {
+  fill:none;
+}
+.classname-3 {
+  stroke:#fff;
+  stroke-width:4px;
+}.classname-3,.classname-5,.classname-6 {
+  stroke-miterlimit:10;
+}
+.classname-4,.classname-7,.classname-8 {
+  fill:#333;
+}
+.classname-5,.classname-6 {
+  stroke:#333;
+  stroke-width:3px;
+}
+.classname-6 {
+  fill:#fff;
+}
+.classname-7 {
+  font-size:21px;
+}
+.classname-7,.classname-8 {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+.classname-8 {
+  font-size:11px;
+}
+
+.your-location {
+  fill: white;
 }
