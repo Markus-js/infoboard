@@ -25,6 +25,6 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("headline").innerHTML = "EXPIRED";
+    document.getElementById("headline").innerHTML = "Fredagsbaren har åben! kom og få en øl!";
   }
 }, 1000);
