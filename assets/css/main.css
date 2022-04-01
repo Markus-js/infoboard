@@ -493,7 +493,7 @@ span {
 
 @-webkit-keyframes slide {
   from {
-    right: -600%;
+    right: -550%;
   }
   to {
     right: 110%;
@@ -502,7 +502,7 @@ span {
 
 @keyframes slide {
   from {
-    right: -600%;
+    right: -550%;
   }
   to {
     right: 110%;
