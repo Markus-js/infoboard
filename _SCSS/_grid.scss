@@ -3,7 +3,7 @@
     height: 100vh;
     display: grid;
     grid-template-areas: 
-    "a . e"
+    "a cu e"
     "b c e"
     "g g g"
     "h h h";
@@ -39,4 +39,8 @@
 #forecast {
     grid-area: i;
     background-color: rgb(36, 36, 36);
+}
+
+#counter {
+    grid-area: cu;
 }
