@@ -89,18 +89,18 @@ span {
 }
 
 #menu {
-  font-size: 0.8vw;
+  font-size: 1vw;
   text-align: center;
-  height: 78%;
-  padding-top: 3vw;
+  height: 100%;
+  padding-top: 0;
+  margin-bottom: 1vw;
   ul {
-    margin: 10px;
+    margin: 0;
   }
   li {
-    font-size: 0.8vw;
     margin-bottom: 1vw;
     dl {
-      font-size: 0.6vw;
+      font-size: 1vw;
     }
   }
   h2 {
