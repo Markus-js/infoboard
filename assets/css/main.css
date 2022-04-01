@@ -16,14 +16,14 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
-  background-color: #2a235f;
+  background-color: #201b49;
 }
 
 #menu {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b;
-  background-color: #2a235f;
+  background-color: #201b49;
 }
 
 #bus {
@@ -422,7 +422,7 @@ img {
 }
 
 #weather-color-corner {
-  background-color: #2a235f;
+  background-color: #201b49;
   position: absolute;
   width: 750px;
   height: 600px;
