@@ -4,19 +4,11 @@
   height: 100vh;
   display: -ms-grid;
   display: grid;
-
-      grid-template-areas: "a c e"
- "b c e"
- "g g g"
- "h h h";
+      grid-template-areas: "a cu e" "b c e" "g g g" "h h h";
   -ms-grid-columns: 1.5fr 2fr 4.5fr;
       grid-template-columns: 1.5fr 2fr 4.5fr;
   -ms-grid-rows: 1fr 3.7fr 2fr 1fr;
       grid-template-rows: 1fr 3.7fr 2fr 1fr;
-  grid-template-areas: "a c e" "b c e" "g g g" "h h h";
-  grid-template-columns: 1.5fr 2fr 4.5fr;
-  grid-template-rows: 1fr 3.7fr 2fr 1fr;
-
 }
 
 .dateNtime {
@@ -35,8 +27,7 @@
 }
 
 #bus {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: c;
   background-color: transparent;
@@ -68,6 +59,13 @@
 #forecast {
   grid-area: i;
   background-color: #242424;
+}
+
+#counter {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cu;
+  background-color: red;
 }
 
 #bus {
@@ -254,7 +252,7 @@ body {
 }
 
 #menu li dl {
-  font-size: 1vw;
+  font-size: 0.7vw;
 }
 
 img {
@@ -398,12 +396,8 @@ img {
   margin-left: 2vw;
   width: 5.5vw;
   height: 6vw;
-
-  -webkit-transform: scale(1.6);
-          transform: scale(1.6);
-
-  transform: scale(1.5);
-
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 #Weather-grid div {
@@ -418,16 +412,19 @@ img {
   margin-left: 3vw;
 }
 
+#chart {
+  margin-top: 1vw;
+}
+
 #TempChart {
-  margin-top: -2.5vw;
   width: 400px;
-  height: 780px;
+  height: 550px;
 }
 
 #weather-color-corner {
   background-color: #201b49;
   position: absolute;
-  width: 775px;
+  width: 750px;
   height: 600px;
   margin-top: -1.5vw;
   z-index: -9999;
