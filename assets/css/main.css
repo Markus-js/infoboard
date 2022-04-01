@@ -587,7 +587,7 @@ span {
 #counter {
   text-align: center;
   margin-left: 3vw;
-  margin-top: 3vw;
+  margin-top: 1.5vw;
   font-size: 1vw;
 }
 
@@ -615,17 +615,17 @@ span {
 }
 
 #countdown #dage {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 #countdown #timer {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 #countdown #minutter {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 #countdown #sekunder {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
