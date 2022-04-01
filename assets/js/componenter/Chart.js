@@ -148,7 +148,6 @@ async function getWeatherData(latitude, longitude) {
             },
           },
           y: {
-            beginAtZero: true,
             grid: {
               display: false,
             },
