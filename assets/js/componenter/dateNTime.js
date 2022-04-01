@@ -17,7 +17,7 @@ export const dateNTime = async () => {
           ("0" + s).substr(-2); 
       }
          setInterval(time, 1000); 
-     
+   
 
     //DATO
     const month = ["Januar","Februar","Marts","April","Maj","Juni","Juli","August","September","Oktober","November","December"];

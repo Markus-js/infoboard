@@ -6,12 +6,13 @@ const dotSection = document.querySelector("#dot-section");
 const time = new Date();
   const year = time.getFullYear();
   let month = time.getMonth();
-  const date = time.getDate();
+  let date = time.getDate();
   let hour = time.getHours()
   
   const monthFormat = month < 10 ? month = `0${month + 1}` : month + 1;
   const hourFormat = hour < 10 ? hour = `0${hour}` : hour;
-  let dateOfTime = `${year}-${monthFormat}-${date}T${hourFormat}`;
+  const dateFormat = date < 10 ? date = `0${date}` : date;
+  let dateOfTime = `${year}-${monthFormat}-${dateFormat}T${hourFormat}`;
   console.log(dateOfTime)
 
  
@@ -39,9 +40,8 @@ export function showdata() {
 
 data.forEach(element => {
   let hold = element.Team
-  
+
   if (element.StartDate.substring(0,13)===dateOfTime) {
-    console.log(element)
     switch (hold) {
       case "gmg010122":
         if (element.Room !== ""){
