@@ -66,7 +66,6 @@
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: cu;
-  background-color: red;
 }
 
 #bus {
@@ -583,6 +582,11 @@ span {
 
 .your-location {
   fill: white;
+}
+
+#counter {
+  text-align: center;
+  margin-left: 3vw;
 }
 
 #countdown {
