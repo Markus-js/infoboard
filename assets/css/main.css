@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 #main {
   height: 100vh;
   display: -ms-grid;
@@ -582,4 +583,43 @@ span {
 
 .your-location {
   fill: white;
+}
+
+#countdown {
+  color: white;
+  font-family: cabin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 40px;
+}
+
+#countdown label {
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+#countdown p {
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#countdown #dage {
+  font-size: 350%;
+}
+
+#countdown #timer {
+  font-size: 350%;
+}
+
+#countdown #minutter {
+  font-size: 350%;
+}
+
+#countdown #sekunder {
+  font-size: 350%;
 }
