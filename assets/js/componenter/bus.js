@@ -84,7 +84,7 @@ function build(data) {
             let busTap = document.createElement('article');
             busTap.innerHTML += `
                 <p>${item.line}</p>
-                <p>${item.direction}</p>
+                <p class="middle">${item.direction}</p>
                 <p>${timeToBus}</p>
             `;
             busList.appendChild(busTap);
