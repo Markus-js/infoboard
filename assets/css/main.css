@@ -3,57 +3,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 #main {
   height: 100vh;
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "a cu e" "b c e" "g g g" "h h h";
-  -ms-grid-columns: 1.5fr 2fr 4.5fr;
-      grid-template-columns: 1.5fr 2fr 4.5fr;
-  -ms-grid-rows: 1fr 3.7fr 2fr 1fr;
-      grid-template-rows: 1fr 3.7fr 2fr 1fr;
+  grid-template-areas: "a cu e" "b c e" "g g g" "h h h";
+  grid-template-columns: 1.5fr 2fr 4.5fr;
+  grid-template-rows: 1fr 3.7fr 2fr 1fr;
 }
 
 .dateNtime {
   z-index: -9997;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: a;
   background-color: #201b49;
 }
 
 #menu {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: b;
   background-color: #201b49;
 }
 
 #bus {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: c;
   background-color: transparent;
 }
 
 #kort {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
   grid-area: e;
   background-color: transparent;
 }
 
 #chart {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: g;
   background-color: transparent;
 }
 
 #weather {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: h;
 }
 
@@ -63,8 +45,6 @@
 }
 
 #counter {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: cu;
 }
 
@@ -89,12 +69,8 @@
 #bus div section article {
   position: relative;
   background-color: #201b49;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border-radius: 10px;
   margin: 1em;
   padding: 0.5em;
@@ -102,8 +78,7 @@
 
 #bus div section article .middle {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
 }
@@ -122,7 +97,6 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#091218), to(#0d0b1f));
   background: linear-gradient(90deg, #091218 0%, #0d0b1f 100%);
   overflow-y: hidden;
   /* Hide vertical scrollbar */
@@ -153,24 +127,15 @@ body {
   margin-top: 30px;
   margin-bottom: 50px;
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #classcontainer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 10px 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #classcontainer div div {
@@ -185,12 +150,8 @@ body {
 #kort ul {
   margin-top: 10px;
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 #kort ul li {
@@ -207,8 +168,7 @@ body {
 }
 
 #bus div article {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.788) 0vw 0vw 1vw;
-          box-shadow: rgba(0, 0, 0, 0.788) 0vw 0vw 1vw;
+  box-shadow: rgba(0, 0, 0, 0.788) 0vw 0vw 1vw;
 }
 
 #menu {
@@ -361,10 +321,8 @@ img {
 }
 
 #Weather-grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 20px;
 }
 
@@ -372,8 +330,7 @@ img {
   margin-left: 2vw;
   width: 5.5vw;
   height: 6vw;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 #Weather-grid div {
@@ -386,6 +343,7 @@ img {
 
 #Weather-grid svg {
   margin-left: 3.2vw;
+  margin-top: -2vw;
   padding: 20px;
 }
 
@@ -456,13 +414,11 @@ img {
 #news1 {
   margin-top: 20px;
   position: absolute;
-  -webkit-animation: slide 70s infinite linear;
-          animation: slide 70s infinite linear;
+  animation: slide 70s infinite linear;
 }
 
 #left {
   position: absolute;
-  background: -webkit-gradient(linear, right top, left top, from(#ff0f0f), color-stop(77%, #7c0000));
   background: linear-gradient(270deg, #ff0f0f 0%, #7c0000 77%);
   padding: 20px;
   color: white;
@@ -472,7 +428,6 @@ img {
   padding-right: 2vw;
   left: -2vw;
   letter-spacing: 0.1vw;
-  -webkit-transform: skew(-20deg, 0deg);
   transform: skew(-20deg, 0deg);
 }
 
@@ -491,15 +446,6 @@ span {
   margin: 0 300px;
   border-radius: 30px;
   color: white;
-}
-
-@-webkit-keyframes slide {
-  from {
-    right: -550%;
-  }
-  to {
-    right: 110%;
-  }
 }
 
 @keyframes slide {
@@ -578,12 +524,8 @@ span {
 #countdown {
   color: white;
   font-family: cabin;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-right: 40px;
 }
 
