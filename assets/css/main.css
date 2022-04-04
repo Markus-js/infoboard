@@ -17,14 +17,14 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
-  background-color: rgba(27, 25, 66, 0.85);
+  background-color: #201b49;
 }
 
 #menu {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b;
-  background-color: rgba(27, 25, 66, 0.85);
+  background-color: #201b49;
 }
 
 #bus {
@@ -122,7 +122,7 @@
 }
 
 body {
-  background-color: #17153a;
+  background-color: #1b1842;
   overflow-y: hidden;
   /* Hide vertical scrollbar */
   overflow-x: hidden;
@@ -400,7 +400,7 @@ img {
 }
 
 #weather-color-corner {
-  background-color: rgba(27, 25, 66, 0.85);
+  background-color: #201b49;
   position: absolute;
   width: 750px;
   height: 600px;
