@@ -328,7 +328,7 @@ img {
 
 #Weather-grid #MainWeather {
   margin-left: 2vw;
-  margin-top: 0vw;
+  margin-top: -0.5vw;
   width: 5.5vw;
   height: 6vw;
   transform: scale(1.5);
@@ -339,12 +339,12 @@ img {
   margin-top: -1.5vw;
   height: 10vh;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
 }
 
 #Weather-grid svg {
   margin-left: 3.2vw;
-  margin-top: -1.5vw;
+  margin-top: -1.3vw;
   padding: 20px;
 }
 
