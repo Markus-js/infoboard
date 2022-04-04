@@ -17,14 +17,14 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
-  background-color: #201b49;
+  background-color: #1c173e;
 }
 
 #menu {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b;
-  background-color: #201b49;
+  background-color: #1c173e;
 }
 
 #bus {
@@ -88,7 +88,7 @@
 
 #bus div section article {
   position: relative;
-  background-color: #201b49;
+  background-color: #1c173e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +122,7 @@
 }
 
 body {
-  background-color: #1b1842;
+  background-color: #181437;
   overflow-y: hidden;
   /* Hide vertical scrollbar */
   overflow-x: hidden;
@@ -400,7 +400,7 @@ img {
 }
 
 #weather-color-corner {
-  background-color: #201b49;
+  background-color: #1c173e;
   position: absolute;
   width: 750px;
   height: 600px;
