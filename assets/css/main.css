@@ -386,6 +386,7 @@ img {
 
 #Weather-grid svg {
   margin-left: 3.2vw;
+  padding: 20px;
 }
 
 #chart {
