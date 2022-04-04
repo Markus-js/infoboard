@@ -12,27 +12,27 @@
 .dateNtime {
   z-index: -9997;
   grid-area: a;
-  background-color: #201b49;
+  background-color: #1f1b47;
 }
 
 #menu {
   grid-area: b;
-  background-color: #201b49;
+  background-color: #1f1b47;
 }
 
 #bus {
   grid-area: c;
-  background-color: transparent;
+  background-color: #17143a;
 }
 
 #kort {
   grid-area: e;
-  background-color: transparent;
+  background-color: #17143a;
 }
 
 #chart {
   grid-area: g;
-  background-color: transparent;
+  background-color: #17143a;
 }
 
 #weather {
@@ -328,7 +328,7 @@ img {
 
 #Weather-grid #MainWeather {
   margin-left: 2vw;
-  margin-top: -1vw;
+  margin-top: -1.2vw;
   width: 5.5vw;
   height: 6vw;
   transform: scale(1.3);
@@ -358,7 +358,7 @@ img {
 }
 
 #weather-color-corner {
-  background-color: #201b49;
+  background-color: #1f1b47;
   position: absolute;
   width: 750px;
   height: 600px;
