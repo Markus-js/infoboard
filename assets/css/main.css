@@ -12,12 +12,12 @@
 .dateNtime {
   z-index: -9997;
   grid-area: a;
-  background-color: #471b49;
+  background-color: #201b49;
 }
 
 #menu {
   grid-area: b;
-  background-color: #471b49;
+  background-color: #201b49;
 }
 
 #bus {
@@ -358,7 +358,7 @@ img {
 }
 
 #weather-color-corner {
-  background-color: #471b49;
+  background-color: #201b49;
   position: absolute;
   width: 750px;
   height: 600px;
