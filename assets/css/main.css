@@ -79,7 +79,7 @@
   font-size: 1.3vw;
   text-align: center;
   margin-top: 25px;
-  margin-bottom: 125px;
+  margin-bottom: 15px;
 }
 
 #bus div section {
@@ -110,7 +110,6 @@
 
 #bus div section article p {
   font-size: 1vw;
-  color: red !important;
 }
 
 * {
