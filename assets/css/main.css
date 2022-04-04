@@ -113,7 +113,7 @@
 }
 
 * {
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
   color: #b8b8d1;
   margin: 0;
   padding: 0;
@@ -142,7 +142,7 @@ body {
 
 .dateNtime #currentTime {
   color: white;
-  font-family: 'IBM Plex Sans Thai';
+  font-family: "IBM Plex Sans Thai";
   margin-bottom: 15px;
   font-weight: 200;
   font-size: 2.5vw;
@@ -151,6 +151,7 @@ body {
 #classcontainer {
   margin: auto auto;
   margin-top: 30px;
+  margin-bottom: 20px;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,21 +408,21 @@ img {
 
 .st0 {
   fill: none;
-  stroke: #504F78;
+  stroke: #504f78;
   stroke-width: 3;
   stroke-miterlimit: 10;
 }
 
 .st1 {
-  fill: #2A2656;
+  fill: #2a2656;
 }
 
 .st2 {
-  fill: #BCBCF7;
+  fill: #bcbcf7;
 }
 
 .st3 {
-  font-family: 'IBM Plex Sans Thai Looped';
+  font-family: "IBM Plex Sans Thai Looped";
 }
 
 .st4 {
@@ -429,7 +430,7 @@ img {
 }
 
 .st5 {
-  fill: #D4000B;
+  fill: #d4000b;
 }
 
 .st6 {
@@ -437,7 +438,7 @@ img {
 }
 
 .st7 {
-  fill: #BCBCF7;
+  fill: #bcbcf7;
 }
 
 .st8 {
@@ -480,7 +481,7 @@ img {
   bottom: 0;
   width: 100%;
   height: 2.25vw;
-  background-color: #504F78;
+  background-color: #504f78;
   padding-bottom: 0.7vw;
 }
 
@@ -517,7 +518,8 @@ span {
   mix-blend-mode: screen;
 }
 
-.classname-3, .classname-5 {
+.classname-3,
+.classname-5 {
   fill: none;
 }
 
@@ -526,15 +528,20 @@ span {
   stroke-width: 4px;
 }
 
-.classname-3, .classname-5, .classname-6 {
+.classname-3,
+.classname-5,
+.classname-6 {
   stroke-miterlimit: 10;
 }
 
-.classname-4, .classname-7, .classname-8 {
+.classname-4,
+.classname-7,
+.classname-8 {
   fill: #333;
 }
 
-.classname-5, .classname-6 {
+.classname-5,
+.classname-6 {
   stroke: #333;
   stroke-width: 3px;
 }
@@ -547,8 +554,9 @@ span {
   font-size: 21px;
 }
 
-.classname-7, .classname-8 {
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+.classname-7,
+.classname-8 {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
 }
 
 .classname-8 {
