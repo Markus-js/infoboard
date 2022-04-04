@@ -19,7 +19,7 @@
 body {
   background: linear-gradient(
     90deg,
-    rgba(11, 9, 24, 1) 0%,
+    rgb(9, 18, 24) 0%,
     rgba(13, 11, 31, 1) 100%
   );
   overflow-y: hidden;
@@ -230,7 +230,7 @@ img {
 #Weather-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 10px;
+  padding: 20px;
 
   #MainWeather {
     margin-left: 2vw;
